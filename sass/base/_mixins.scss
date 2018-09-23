@@ -11,3 +11,12 @@
     	font-size: .9em;
     }
 }
+
+@media only screen and (max-width: 1002px) {
+    .image-container-tbd {
+    	display: none;
+    }
+    .text-container-tbd {
+    	width: 100%;
+    }
+}

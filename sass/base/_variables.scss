@@ -10,18 +10,43 @@ html, body {
 .container-tbd {
 	height: 100%;
 	width: 100%;
-	background-image: url("../images/placeholder.jpg");
+	// background-image: url("../images/placeholder.jpg");
 	// background: linear-gradient(50deg, rgba(0, 0, 255, 1), rgba(0, 0, 255, 1), rgba(0, 0, 255, 0.3)), url("../images/placeholder.jpg");
-	background-position: center center;
+	// background-position: center center;
 	background-repeat: no-repeat;
 	background-attachment: fixed; 
 	background-size: cover;
 	background-color: blue; 
     justify-content: center;
     align-items: center;
-    background-blend-mode: overlay; 
     display: flex;
 }
+
+.image-container-tbd {
+	background-image: url("../images/R&D-5.jpg");
+	height: 100%;
+    width: 50%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+
+
+.text-container-tbd {
+	// height: 100%;
+	width: 60%;
+	display: flex;
+	
+}
+
+.center-tbd {
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
 
 h1 {
 	margin-top: 0;
@@ -50,7 +75,4 @@ p {
 	line-height: 4;
 }
 
-.test {
-	align-items: center;
-	 justify-content: center;
-}
+
