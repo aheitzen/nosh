@@ -17,18 +17,13 @@ html, body {
 
 }
 
-
 .image-container-tbd {
-	// background-image: url("../images/R&D-5.jpg");
 	height: 100%;
     width: 50%;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background: blue;
-	// background: blue;
-	// filter: grayscale(1);
- //    mix-blend-mode: screen;
 }
 
 img {
@@ -46,7 +41,6 @@ img:hover {
 .text-container-tbd {
 	width: 60%;
 	display: flex;
-	
 }
 
 .center-tbd {
@@ -57,19 +51,15 @@ img:hover {
 
 .blue-stripe {
 	background-color: blue;
-	height: 20px;
+	height: 2px;
 	width: 100%;
-	margin-bottom: 150px;
+	z-index: 2;
 }
-
-
-
 
 h1 {
 	margin-top: 0;
 	color: white;
 	font-family: 'Tinos', serif;
-
 	font-size: 14em;
     text-align: center;
     margin-bottom: 0;
@@ -87,7 +77,6 @@ h2 {
 
 p {
 	font-family: 'Fira Mono', monospace;
-
 	text-align: center;
 	color: white;
 	line-height: 4;
