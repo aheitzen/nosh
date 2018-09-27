@@ -1,0 +1,60 @@
+:root {
+	--primary-color: #ffffff;
+	--secondary-color: #0000ff;
+	--tertiary-color: #ffff00; 
+	--accent-color: #6727FB; 
+	--attribution-text: 'futura', sans-serif;
+}
+
+/*font-family: var(--attribution-text);*/
+
+@font-face {
+  font-family: "futura";
+  src: url("/fonts/futura.ttf") format("ttf"),
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+
+.container.container__topTen {
+	border: solid 2px var(--secondary-color);
+	width: 97%;
+	height: 97%;
+	overflow: scroll;
+}
+
+.border.border__topTen {
+	border-right: 2px solid var(--secondary-color);
+}
+
+.center.center__dead {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.h2.h2__top-ten {
+	font-family: times, serif;
+	text-align: center;	
+	color: var(--secondary-color);
+}
+
+.h2.h2__top-ten:hover {
+	color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: blue;
+    cursor: not-allowed;
+}
+
+#h2__largeText {
+	font-size: 80px;
+}
+
+
+
+
