@@ -1,4 +1,4 @@
-console.log("I work");
+
 
 var rellax = new Rellax('.rellax', {
         // center: true
@@ -7,3 +7,6 @@ var rellax = new Rellax('.rellax', {
             console.log(position);
         }
       });
+
+
+
