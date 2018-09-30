@@ -70,6 +70,8 @@ html, body {
     mix-blend-mode: screen;
     height: 40em;
     border: white 2px solid;
+    transition: ease-in .5s;
+    opacity: 0;
 }
 
 /*img:hover {
@@ -106,7 +108,8 @@ html, body {
 	background: rgba(255, 255, 255, 0.7);
 	/*position: relative;
 	z-index: 2;*/
-	margin-top: 1em;
+	margin-top: 1.5em;
+	line-height: 1.5;
 }
 
 p {
@@ -122,12 +125,15 @@ p {
 }
 
 #los-angeles {
-	display: none;
+	/*display: none;*/
+	height: 0;
 	margin-bottom: 0;
+	opacity: 0;
 }
 
 #bagel-broker-text {
-	display: none;
+	height: 0;
+	opacity: 0;
 }
 
 

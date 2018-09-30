@@ -26,13 +26,27 @@ $(document).ready(function() {
 	// hover over text, subheader floats up
 	$(".section.section__topTen").mouseenter(function() {
     	$( "#los-angeles" ).css({ 
-    		"transition": "ease-in 3s",
-    		"display": "block"
+    		"height": "auto",
+    		"opacity": 1,
+    		"transition": "ease-in 1s"
     	});
 	}).mouseleave(function() {
     	$( "#los-angeles" ).css({
-    		"transition": "ease-out 3s",
-    	 	"display": "none"
+    		"opacity": 0,
+    		"transition": "ease-out 1s"
+    	});
+	});
+	//copy-block-transition
+	$(".section.section__topTen").mouseenter(function() {
+    	$( "#bagel-broker-text" ).css({ 
+    		"height": "auto",
+    		"opacity": 1,
+    		"transition": "ease-in 1s"
+    	});
+	}).mouseleave(function() {
+    	$( "#bagel-broker-text" ).css({
+    		"opacity": 0,
+    		"transition": "ease-out 1s"
     	});
 	});
 	// Text block function
@@ -43,7 +57,10 @@ $(document).ready(function() {
 	});
 	// changing image on hover
 	$(".section.section__topTen").mouseenter(function() {
-    	$(".img.img__top-ten").attr( "src", "images/R&D-5.jpg" );
+    	$(".img.img__top-ten").attr({ 
+    		"src": "images/R&D-5.jpg",
+    		"style":  "opacity: 1"
+    	});
 	}).mouseleave(function() {
     	$( ".img.img__top-ten" ).attr( "src", "images/top-ten.jpeg" );
 	});
