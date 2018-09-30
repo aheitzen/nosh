@@ -50,12 +50,16 @@ html, body {
 	margin-bottom: 0;
 }
 
-.h2.h2__top-ten:hover {
+.section.section__topTen {
+
+}
+
+/*.h2.h2__top-ten:hover {
 	color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: blue;
     cursor: not-allowed;
-}
+}*/
 
 #h2__largeText {
 	font-size: 80px;
@@ -74,24 +78,35 @@ html, body {
 }*/
 
 .img-container {
-    background-position: center center;
+    /*background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     background: blue;
     display: flex;
     justify-content: center;
     align-items: center;
-    /*height: 100vh;*/
+    height: 100vh;
+    width: 100vh;
+    position: fixed;*/
+    height: 90%;
+    width: 44%; 
     position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .text.text__paragraph--container {
 	border: 2px solid var(--secondary-color);
 	margin: 3em;
 	/*display: none;*/
-	background: white;
-	position: relative;
-	z-index: 2;
+	background: rgba(255, 255, 255, 0.7);
+	/*position: relative;
+	z-index: 2;*/
+	margin-top: 1em;
 }
 
 p {
@@ -103,10 +118,15 @@ p {
 .h3.h3__top-ten {
 	font-family: var(--attribution-text);
 	text-align: center;
-	color: var(--accent-color);
+	color: var(--secondary-color);
 }
 
 #los-angeles {
+	display: none;
+	margin-bottom: 0;
+}
+
+#bagel-broker-text {
 	display: none;
 }
 

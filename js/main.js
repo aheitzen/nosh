@@ -18,24 +18,56 @@
 // 	});
 // });
 
-
+var scroll = new SmoothScroll('a[href*="#"]');
 
 
 
 $(document).ready(function() {
 	// hover over text, subheader floats up
-	$("#bagel-broker").mouseenter(function() {
-    	$( "#los-angeles" ).css( "display", "block" );
+	$(".section.section__topTen").mouseenter(function() {
+    	$( "#los-angeles" ).css({ 
+    		"transition": "ease-in 3s",
+    		"display": "block"
+    	});
 	}).mouseleave(function() {
-    	$( "#los-angeles" ).css( "display", "none" );
+    	$( "#los-angeles" ).css({
+    		"transition": "ease-out 3s",
+    	 	"display": "none"
+    	});
+	});
+	// Text block function
+		$(".section.section__topTen").mouseenter(function() {
+    	$( "#bagel-broker-text" ).css( "display", "block" );
+	}).mouseleave(function() {
+    	$( "#bagel-broker-text" ).css( "display", "none" );
 	});
 	// changing image on hover
-	$("#bagel-broker").mouseenter(function() {
+	$(".section.section__topTen").mouseenter(function() {
     	$(".img.img__top-ten").attr( "src", "images/R&D-5.jpg" );
 	}).mouseleave(function() {
     	$( ".img.img__top-ten" ).attr( "src", "images/top-ten.jpeg" );
 	});
+	//CSS images transtitions
+	// $(".section.section__topTen").mouseenter(function() {
+ //    	$(".img.img__top-ten").css( "transition", "ease-in 3s" );
+	// }).mouseleave(function() {
+ //    	$( ".img.img__top-ten" ).css( "transition", "ease-out 3s" );
+	// });
+	//Header change css/js
+	$(".section.section__topTen").mouseenter(function() {
+    	$("#bagel-broker").css({
+    		"color": "white", 
+    		"-webkit-text-stroke-width": "1px",
+    		"-webkit-text-stroke-color": "blue",
+    		"cursor": "not-allowed"
+    	});
+	}).mouseleave(function() {
+    	$( "#bagel-broker" ).css( "color", "blue" );
+	});
 });
+
+
+// "transition": "ease-out .4s"
 
 
 
