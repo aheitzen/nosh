@@ -47,6 +47,7 @@ html, body {
 	text-align: center;	
 	color: var(--secondary-color);
 	font-size: 80px;
+	margin-bottom: 0;
 }
 
 .h2.h2__top-ten:hover {
@@ -60,17 +61,17 @@ html, body {
 	font-size: 80px;
 }
 
-img {
+.img.img__top-ten {
 	filter: grayscale(1);
     mix-blend-mode: screen;
     height: 40em;
     border: white 2px solid;
 }
 
-img:hover {
+/*img:hover {
 	filter: grayscale(0);
 	mix-blend-mode: unset;
-}
+}*/
 
 .img-container {
     background-position: center center;
@@ -80,19 +81,33 @@ img:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /*height: 100vh;*/
+    position: fixed;
 }
 
 .text.text__paragraph--container {
 	border: 2px solid var(--secondary-color);
 	margin: 3em;
-	display: none;
+	/*display: none;*/
+	background: white;
+	position: relative;
+	z-index: 2;
 }
 
 p {
 	font-family: 'Anonymous Pro', monospace;
 	margin-left: 20px;
 	margin-right: 20px;
+}
+
+.h3.h3__top-ten {
+	font-family: var(--attribution-text);
+	text-align: center;
+	color: var(--accent-color);
+}
+
+#los-angeles {
+	display: none;
 }
 
 
