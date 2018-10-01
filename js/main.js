@@ -18,11 +18,31 @@
 // 	});
 // });
 
-var scroll = new SmoothScroll('a[href*="#"]');
+// var scroll = new SmoothScroll('a[href*="#"]');
+
+
+
+
 
 
 
 $(document).ready(function() {
+
+	// $(function() {
+ //          $.scrollify({
+ //            section : ".section section__topTen",
+ //          });
+ //        });
+ 		 // $(function() {
+    //             $.scrollify({
+    //             	section : ".section section__topTen",
+                    
+    //             });
+    //     }); 
+
+
+
+
 	// hover over text, subheader floats up
 	$("#broker-section").mouseenter(function() {
     	$( "#los-angeles" ).css({ 

@@ -140,7 +140,7 @@ p {
 }
 
 #bagel-broker-text {
-	height: 20px;
+	height: 0;
 	opacity: 0;
 }
 
@@ -151,7 +151,7 @@ p {
 }
 
 #bialy-text {
-	height: 20px;
+	height: 0;
 	opacity: 0;
 }
 
@@ -184,6 +184,92 @@ p {
 }
 
 
+
+
+.grid.grid__desert {
+	padding-top: 40px;
+    padding-bottom: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 60px;
+    padding: 10px;
+    margin-left: 6em;
+    margin-right: 6em;
+    margin-top: 6em;
+    margin-bottom: 6em;
+}
+
+.desert-child {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    border: black solid 2px;
+    padding: 1rem;
+    min-height: 300px;
+    background: white;
+    box-shadow: 5px 5px blue;
+    border: 3px solid blue;
+}
+
+
+/*.whatever {
+	    margin: 0 auto;
+    max-width: 120rem;
+}
+*/
+
+/*.background.background__deserts {
+	background-color: var(--secondary-color);
+}*/
+
+.section.section__deserts {
+	border: solid blue 2px;
+	margin: 2em;
+	/*background: var(--secondary-color);*/
+}
+
+.h1.h1__deserts {
+	text-align: center;
+	color: blue;
+	font-size: 80px;
+	font-family: times, serif;
+}
+
+.h2.h2__deserts {
+	text-align: center;
+	color: var(--secondary-color);
+
+}
+.h4.h4__deserts {
+	margin-right: 10em;
+    margin-left: 10em;
+    font-family: 'Anonymous Pro', monospace;
+    margin-top: 3em;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: 100;
+}
+
+.p.p__paragraph-desert {
+	text-align: center;
+	color: blue;
+	font-size: 1.3em;
+	font-family: times, serif;
+}
+
+#desert-attr {
+	margin-top: 3em;
+}
+
+#breadcrumbs-desert {
+	margin-right: 6em;
+}
+
+#title-desert {
+	margin-right: 5em;
+}
+
+    
     
 
 
