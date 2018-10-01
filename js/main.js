@@ -45,7 +45,7 @@ $(document).ready(function() {
 	//copy-block-transition
 	$("#broker-section").mouseenter(function() {
     	$( "#bagel-broker-text" ).css({ 
-    		"height": "auto",
+    		"height": "auto", //auto
     		"opacity": 1,
     		"transition": "ease-in 1s"
     	});
@@ -62,8 +62,10 @@ $(document).ready(function() {
     		"style":  "opacity: 1"
     	});
 	}).mouseleave(function() {
-    	$( ".img.img__top-ten" ).attr({ 
-    		"src": "images/top-ten.jpeg",
+    	$( ".img.img__top-ten" ).css({ 
+    		// "src": "images/top-ten.jpeg",
+    		"display": "none"
+
     	});
 	});
 	//CSS images transtitions
@@ -77,11 +79,16 @@ $(document).ready(function() {
     	$("#bagel-broker").css({
     		"color": "white", 
     		"-webkit-text-stroke-width": "1px",
-    		"-webkit-text-stroke-color": "blue",
-    		"cursor": "not-allowed"
+    		"-webkit-text-stroke-color": "blue"
     	});
+    	$(".span.span__number").css("color", "blue");
 	}).mouseleave(function() {
     	$( "#bagel-broker" ).css( "color", "blue" );
+    	$(".span.span__number").css({
+    		"color": "white", 
+    		"-webkit-text-stroke-width": "1px",
+    		"-webkit-text-stroke-color": "blue"
+    	});
 	});
 
 
@@ -108,7 +115,7 @@ $(document).ready(function() {
     	});
 	});
 	// Text block function
-		$("#bialy-section").mouseenter(function() {
+	$("#bialy-section").mouseenter(function() {
     	$( "#bialy-text" ).css( "display", "block" );
 	}).mouseleave(function() {
     	$( "#bialy-text" ).css( "display", "none" );
@@ -133,8 +140,9 @@ $(document).ready(function() {
     		"style":  "opacity: 1"
     	});
 	}).mouseleave(function() {
-    	$( ".img.img__top-ten" ).attr({ 
-    		"src": "images/top-ten.jpeg",
+    	$( ".img.img__top-ten" ).css({ 
+    		// "src": "images/top-ten.jpeg",
+    		"display": "none"
     	});
 	});
 	//CSS images transtitions
@@ -151,8 +159,14 @@ $(document).ready(function() {
     		"-webkit-text-stroke-color": "blue",
     		"cursor": "not-allowed"
     	});
+    	$("#span-two").css("color", "blue");
 	}).mouseleave(function() {
     	$( "#bb-header" ).css( "color", "blue" );
+    	$("#span-two").css({
+    		"color": "white", 
+    		"-webkit-text-stroke-width": "1px",
+    		"-webkit-text-stroke-color": "blue"
+    	});
 	});
 
 
@@ -161,58 +175,26 @@ $(document).ready(function() {
 
 
 
+// getting rid of copy transion home function
+
+$("#broker-section").mouseenter(function() {
+    	$( "#top-ten-text" ).css( "display", "none" );
+	}).mouseleave(function() {
+    	$( "#top-ten-text" ).css( "display", "block" );
+	});
+
+	$("#bialy-section").mouseenter(function() {
+    	$( "#top-ten-text" ).css( "display", "none" );
+	}).mouseleave(function() {
+    	$( "#top-ten-text" ).css( "display", "block" );
+	});
 
 
 
 
 
 
-	// //NEXT SECTION: Bialy Section
-	// // header change
-	// $("#bialy-section").mouseenter(function() {
- //    	$( "#cleveland-ohio" ).css({ 
- //    		"height": "auto",
- //    		"opacity": 1,
- //    		"transition": "ease-in 1s"
- //    	});
-	// }).mouseleave(function() {
- //    	$( "#cleveland-ohio" ).css({
- //    		"opacity": 0,
- //    		"transition": "ease-out 1s"
- //    	});
-	// });
-	// //image change 
-	// $("#bialy-section").mouseenter(function() {
- //    	$(".img.img__top-ten").attr({ 
- //    		"src": "images/test.jpeg",
- //    		"style":  "opacity: 1"
- //    	});
-	// }).mouseleave(function() {
- //    	$( ".img.img__top-ten" ).attr( "src", "images/top-ten.jpeg" );
-	// });
-	// // Text block function
-	// $("#bialy-section").mouseenter(function() {
- //    	$( "#bialy-text" ).css( "display", "block" );
-	// }).mouseleave(function() {
- //    	$( "#bialy-text" ).css( "display", "none" );
-	// });
-	// //copy-block-transition
-	// $("#bialy-section").mouseenter(function() {
- //    	$( "#bialy-text" ).css({ 
- //    		"height": "auto",
- //    		"opacity": 1,
- //    		"transition": "ease-in 1s"
- //    	});
-	// }).mouseleave(function() {
- //    	$( "#bialy-text" ).css({
- //    		"opacity": 0,
- //    		"transition": "ease-out 1s",
- //    		// "height": 0
- //    	});
-	// });
-
-
-});
+}); //end of doc
 
 
 

@@ -63,6 +63,7 @@ html, body {
 
 #h2__largeText {
 	font-size: 80px;
+	text-align: center;
 }
 
 .img.img__top-ten {
@@ -73,6 +74,7 @@ html, body {
     transition: ease-in .5s;
     opacity: 0;
 }
+
 
 /*img:hover {
 	filter: grayscale(0);
@@ -112,6 +114,12 @@ html, body {
 	line-height: 1.5;
 }
 
+.h3.h3__attr {
+	text-align: center;
+	font-family: var(--attribution-text);
+	font-weight: 500;
+}
+
 p {
 	font-family: 'Anonymous Pro', monospace;
 	margin-left: 20px;
@@ -132,7 +140,7 @@ p {
 }
 
 #bagel-broker-text {
-	height: 0;
+	height: 20px;
 	opacity: 0;
 }
 
@@ -143,9 +151,39 @@ p {
 }
 
 #bialy-text {
-	height: 0;
+	height: 20px;
 	opacity: 0;
 }
 
+#top-ten-text {
+	/*height: 40em;*/
+}
+
+
+.span.span__number {
+	color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: blue;
+}
+
+#span-two {
+	color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: blue;
+}
+
+.h4.h4__title, .h5.h5__breadcrumbs {
+	display: flex;
+    justify-content: flex-end;
+    font-family: var(--attribution-text);
+}
+
+.h5.h5__breadcrumbs {
+	margin-top: 3em;
+	font-weight: 100;
+}
+
+
+    
 
 
