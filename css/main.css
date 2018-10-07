@@ -1,5 +1,6 @@
 html {
-     cursor: url('../images/cursor-S.png'), auto;
+    cursor: url('../images/cursor-S.png'), auto;
+    box-sizing: border-box;
 }
 
 a {
@@ -7,7 +8,24 @@ a {
 }
 
 
+/*          IMAGES          */
 
+
+
+img {
+    opacity: 1;
+    filter: grayscale(1);
+    mix-blend-mode: screen;
+}
+
+img:hover {
+    filter: grayscale(0);
+    mix-blend-mode: unset;
+}
+
+.img--container {
+    background: blue center center no-repeat cover;
+}
 
 
 
@@ -16,23 +34,23 @@ a {
 
 
 .mark {
-    position: relative;
-    left: 0;
-    top: 0;
+    position:sticky;
+    left: 2%;
+    bottom: 2%;
     width: 300px;
     height: 300px;
 }
 
 .mark.mark__logo {
     position: absolute;
-    background: url(../images/logo.png) top left cover no-repeat;
+    background: url(../images/logo.png);
     width: 100%;
     height: 100%;
 }
 
 .mark.mark__tagline {
     position: absolute;
-    background: url(../images/tagline.png) top left cover no-repeat;
+    background: url(../images/tagline.png);
     animation-name: rotate;
     animation-duration: 15s;
     animation-iteration-count: infinite;
@@ -48,7 +66,7 @@ a {
     top: 0;
     width: 100%;
     height: 540px;
-    
+
     animation-name: rotate;
     animation-duration: 15s;
     animation-iteration-count: infinite;
@@ -58,7 +76,7 @@ a {
 
 @keyframes rotate {
     from {
-        transform: rotate(360deg);
+        transform: rotate(-360deg);
     }
 
     to {
@@ -183,4 +201,3 @@ ul#nav {
 /*@media (max-width: 400px) {*/
 /*small phone*/
 /*}*/
-
