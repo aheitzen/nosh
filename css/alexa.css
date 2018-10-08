@@ -213,6 +213,11 @@ p {
     border: 3px solid blue;
 }
 
+.desert-child:hover {
+	box-shadow: 5px 5px white;
+	transform: translate(5px);
+}
+
 
 /*.whatever {
 	    margin: 0 auto;
@@ -270,6 +275,8 @@ p {
 #title-desert {
 	margin-right: 5em;
 }
+
+
 
     
     
