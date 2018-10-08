@@ -1,49 +1,288 @@
+// Nav functionality start
 
+var isSlideOneOpen = false
+var isSlideTwoOpen = false
+var isSlideThreeOpen = false
+var isSlideFourOpen = false
+var isSlideFiveOpen = false
+var isSlideSixOpen = false
+var isSlideSevenOpen = false
 
-// var rellax = new Rellax('.rellax', {
-//         // center: true
-//         callback: function(position) {
-//             // callback every position change
-//             console.log(position);
-//         }
-//       });
+function toggleSlide(slide, isSlideOpen) {
+    if(isSlideOpen) {
+        //close slide
+        $(slide).animate( { left: '+=60%'}, 1000, 'easeOutQuad' );
+    }
+    else {
+        //open slide
+        $(slide).animate( { left: '-=60%' }, 1000, 'easeOutQuad' );
+    }
+}
 
+$( document ).ready(function() {
+    $( "#slide-one" ).click(function() {
+        var hasChildrenOpen = false
+        if(isSlideTwoOpen === true) {
+            toggleSlide($( "#slide-two"), isSlideTwoOpen);
+            isSlideTwoOpen = false
+            hasChildrenOpen = true
+        }
+        if(isSlideThreeOpen === true) {
+            toggleSlide($( "#slide-three"), isSlideThreeOpen);
+            isSlideThreeOpen = false
+            hasChildrenOpen = true
+        }
+        if(isSlideFourOpen === true) {
+            toggleSlide($( "#slide-four"), isSlideFourOpen);
+            isSlideFourOpen = false
+            hasChildrenOpen = true
+        }
+        if(isSlideFiveOpen === true) {
+            toggleSlide($( "#slide-five"), isSlideFiveOpen);
+            isSlideFiveOpen = false
+            hasChildrenOpen = true
+        }
+        if(isSlideSixOpen === true) {
+            toggleSlide($( "#slide-six"), isSlideSixOpen);
+            isSlideSixOpen = false
+            hasChildrenOpen = true
+        }
+        if(isSlideSevenOpen === true) {
+            toggleSlide($( "#slide-seven"), isSlideSevenOpen);
+            isSlideSevenOpen = false
+            hasChildrenOpen = true
+        }
+        //if children are open do not close this tab
+        if(hasChildrenOpen === false) {
+            toggleSlide($( "#slide-one" ), isSlideOneOpen);
+            isSlideOneOpen = !isSlideOneOpen
+        }
+    });
+    
+    $( "#slide-two" ).click(function() {
+        var hasChildrenOpen = false
+        //if slide 2 is closed
+        if(isSlideOneOpen === false) {
+            toggleSlide($( "#slide-one"), isSlideOneOpen);
+            isSlideOneOpen = true
+        }
+        if(isSlideThreeOpen === true) {
+            toggleSlide($( "#slide-three"), isSlideThreeOpen);
+            isSlideThreeOpen = false
+            hasChildrenOpen = true
+        }
+        if(isSlideFourOpen === true) {
+            toggleSlide($( "#slide-four"), isSlideFourOpen);
+            isSlideFourOpen = false
+            hasChildrenOpen = true
+        }
+        if(isSlideFiveOpen === true) {
+            toggleSlide($( "#slide-five"), isSlideFiveOpen);
+            isSlideFiveOpen = false
+            hasChildrenOpen = true
+        }
+        if(isSlideSixOpen === true) {
+            toggleSlide($( "#slide-six"), isSlideSixOpen);
+            isSlideSixOpen = false
+            hasChildrenOpen = true
+        }
+        if(isSlideSevenOpen === true) {
+            toggleSlide($( "#slide-seven"), isSlideSevenOpen);
+            isSlideSevenOpen = false
+            hasChildrenOpen = true
+        }
+        //if children are open do not close this tab
+        if(hasChildrenOpen === false) {
+            toggleSlide($( "#slide-two" ), isSlideTwoOpen);
+            isSlideTwoOpen = !isSlideTwoOpen
+        }
+    });
 
+    $( "#slide-three" ).click(function() {
+        var hasChildrenOpen = false
+        //if slide 3 is closed
+        if(isSlideOneOpen === false) {
+            toggleSlide($( "#slide-one"), isSlideOneOpen);
+            isSlideOneOpen = true
+        }
+        if(isSlideTwoOpen === false) {
+            toggleSlide($( "#slide-two"), isSlideTwoOpen);
+            isSlideTwoOpen = true
+        }
+        if(isSlideFourOpen === true) {
+            toggleSlide($( "#slide-four"), isSlideFourOpen);
+            isSlideFourOpen = false
+            hasChildrenOpen = true
+        }
+        if(isSlideFiveOpen === true) {
+            toggleSlide($( "#slide-five"), isSlideFiveOpen);
+            isSlideFiveOpen = false
+            hasChildrenOpen = true
+        }
+        if(isSlideSixOpen === true) {
+            toggleSlide($( "#slide-six"), isSlideSixOpen);
+            isSlideSixOpen = false
+            hasChildrenOpen = true
+        }
+        if(isSlideSevenOpen === true) {
+            toggleSlide($( "#slide-seven"), isSlideSevenOpen);
+            isSlideSevenOpen = false
+            hasChildrenOpen = true
+        }
+        //if children are open do not close this tab
+        if(hasChildrenOpen === false) {
+            toggleSlide($( "#slide-three" ), isSlideThreeOpen);
+            isSlideThreeOpen = !isSlideThreeOpen
+        }
+    });
 
-// $( document ).ready(function() {
-// 	$("#h2__largeText").mouseenter(function() {
-//     	$( ".text.text__paragraph--container" ).css( "display", "block" );
-// 	}).mouseleave(function() {
-//     	$( ".text.text__paragraph--container" ).css( "display", "none" );
-// 	});
-// });
+    $( "#slide-four" ).click(function() {
+        var hasChildrenOpen = false
+        //if slide 4 is closed
+        if(isSlideOneOpen === false) {
+            toggleSlide($( "#slide-one"), isSlideOneOpen);
+            isSlideOneOpen = true
+        }
+        if(isSlideTwoOpen === false) {
+            toggleSlide($( "#slide-two"), isSlideTwoOpen);
+            isSlideTwoOpen = true
+        }
+        if(isSlideThreeOpen === false) {
+            toggleSlide($( "#slide-three"), isSlideThreeOpen);
+            isSlideThreeOpen = true
+        }
+        if(isSlideFiveOpen === true) {
+            toggleSlide($( "#slide-five"), isSlideFiveOpen);
+            isSlideFiveOpen = false
+            hasChildrenOpen = true
+        }
+        if(isSlideSixOpen === true) {
+            toggleSlide($( "#slide-six"), isSlideSixOpen);
+            isSlideSixOpen = false
+            hasChildrenOpen = true
+        }
+        if(isSlideSevenOpen === true) {
+            toggleSlide($( "#slide-seven"), isSlideSevenOpen);
+            isSlideSevenOpen = false
+            hasChildrenOpen = true
+        }
+        //if children are open do not close this tab
+        if(hasChildrenOpen === false) {
+            toggleSlide($( "#slide-four" ), isSlideFourOpen);
+            isSlideFourOpen = !isSlideFourOpen
+        }
+    });
 
-// var scroll = new SmoothScroll('a[href*="#"]');
+    $( "#slide-five" ).click(function() {
+        var hasChildrenOpen = false
+        //if slide 5 is closed
+        if(isSlideOneOpen === false) {
+            toggleSlide($( "#slide-one"), isSlideOneOpen);
+            isSlideOneOpen = true
+        }
+        if(isSlideTwoOpen === false) {
+            toggleSlide($( "#slide-two"), isSlideTwoOpen);
+            isSlideTwoOpen = true
+        }
+        if(isSlideThreeOpen === false) {
+            toggleSlide($( "#slide-three"), isSlideThreeOpen);
+            isSlideThreeOpen = true
+        }
+        if(isSlideFourOpen === false) {
+            toggleSlide($( "#slide-four"), isSlideFourOpen);
+            isSlideFourOpen = true
+        }
+        if(isSlideSixOpen === true) {
+            toggleSlide($( "#slide-six"), isSlideSixOpen);
+            isSlideSixOpen = false
+            hasChildrenOpen = true
+        }
+        if(isSlideSevenOpen === true) {
+            toggleSlide($( "#slide-seven"), isSlideSevenOpen);
+            isSlideSevenOpen = false
+            hasChildrenOpen = true
+        }
+        //if children are open do not close this tab
+        if(hasChildrenOpen === false) {
+            toggleSlide($( "#slide-five" ), isSlideFiveOpen);
+            isSlideFiveOpen = !isSlideFiveOpen
+        }
+    });
 
+    $( "#slide-six" ).click(function() {
+        var hasChildrenOpen = false
+        //if slide 6 is closed
+        if(isSlideOneOpen === false) {
+            toggleSlide($( "#slide-one"), isSlideOneOpen);
+            isSlideOneOpen = true
+        }
+        if(isSlideTwoOpen === false) {
+            toggleSlide($( "#slide-two"), isSlideTwoOpen);
+            isSlideTwoOpen = true
+        }
+        if(isSlideThreeOpen === false) {
+            toggleSlide($( "#slide-three"), isSlideThreeOpen);
+            isSlideThreeOpen = true
+        }
+        if(isSlideFourOpen === false) {
+            toggleSlide($( "#slide-four"), isSlideFourOpen);
+            isSlideFourOpen = true
+        }
+        if(isSlideFiveOpen === false) {
+            toggleSlide($( "#slide-five"), isSlideFiveOpen);
+            isSlideFiveOpen = true
+        }
+        if(isSlideSevenOpen === true) {
+            toggleSlide($( "#slide-seven"), isSlideSevenOpen);
+            isSlideSevenOpen = false
+            hasChildrenOpen = true
+        }
+        //if children are open do not close this tab
+        if(hasChildrenOpen === false) {
+            toggleSlide($( "#slide-six" ), isSlideSixOpen);
+            isSlideSixOpen = !isSlideSixOpen
+        }
+    });
 
+    $( "#slide-seven" ).click(function() {
+        var hasChildrenOpen = false
+        if(isSlideOneOpen === false) {
+            toggleSlide($( "#slide-one"), isSlideOneOpen);
+            isSlideOneOpen = true
+        }
+        if(isSlideTwoOpen === false) {
+            toggleSlide($( "#slide-two"), isSlideTwoOpen);
+            isSlideTwoOpen = true
+        }
+        if(isSlideThreeOpen === false) {
+            toggleSlide($( "#slide-three"), isSlideThreeOpen);
+            isSlideThreeOpen = true
+        }
+        if(isSlideFourOpen === false) {
+            toggleSlide($( "#slide-four"), isSlideFourOpen);
+            isSlideFourOpen = true
+        }
+        if(isSlideFiveOpen === false) {
+            toggleSlide($( "#slide-five"), isSlideFiveOpen);
+            isSlideFiveOpen = true
+        }
+        if(isSlideSixOpen === false) {
+            toggleSlide($( "#slide-six"), isSlideSixOpen);
+            isSlideSixOpen = true
+        }
+        //if children are open do not close this tab
+        if(hasChildrenOpen === false) {
+            toggleSlide($( "#slide-seven" ), isSlideSevenOpen);
+            isSlideSevenOpen = !isSlideSevenOpen
+        }
+    });
+});
 
-
-
+// Nav functionality end
 
 
 $(document).ready(function() {
-
-	// $(function() {
- //          $.scrollify({
- //            section : ".section section__topTen",
- //          });
- //        });
- 		 // $(function() {
-    //             $.scrollify({
-    //             	section : ".section section__topTen",
-                    
-    //             });
-    //     }); 
-
-
-
-
-	// hover over text, subheader floats up
+    // hover over text, subheader floats up
 	$("#broker-section").mouseenter(function() {
     	$( "#los-angeles" ).css({ 
     		"height": "auto",
@@ -88,13 +327,6 @@ $(document).ready(function() {
 
     	});
 	});
-	//CSS images transtitions
-	// $(".section.section__topTen").mouseenter(function() {
- //    	$(".img.img__top-ten").css( "transition", "ease-in 3s" );
-	// }).mouseleave(function() {
- //    	$( ".img.img__top-ten" ).css( "transition", "ease-out 3s" );
-	// });
-	//Header change css/js
 	$("#broker-section").mouseenter(function() {
     	$("#bagel-broker").css({
     		"color": "white", 
@@ -110,18 +342,7 @@ $(document).ready(function() {
     		"-webkit-text-stroke-color": "blue"
     	});
 	});
-
-
-
-	
-
-
-
-
-
-
-
-	// hover over text, subheader floats up
+    // hover over text, subheader floats up
 	$("#bialy-section").mouseenter(function() {
     	$( "#cleveland-ohio" ).css({ 
     		"height": "auto",
@@ -165,13 +386,6 @@ $(document).ready(function() {
     		"display": "none"
     	});
 	});
-	//CSS images transtitions
-	// $(".section.section__topTen").mouseenter(function() {
- //    	$(".img.img__top-ten").css( "transition", "ease-in 3s" );
-	// }).mouseleave(function() {
- //    	$( ".img.img__top-ten" ).css( "transition", "ease-out 3s" );
-	// });
-	//Header change css/js
 	$("#bialy-section").mouseenter(function() {
     	$("#bb-header").css({
     		"color": "white", 
@@ -188,33 +402,25 @@ $(document).ready(function() {
     		"-webkit-text-stroke-color": "blue"
     	});
 	});
+    // getting rid of copy transion home function
+
+    $("#broker-section").mouseenter(function() {
+        	$( "#top-ten-text" ).css( "display", "none" );
+    	}).mouseleave(function() {
+        	$( "#top-ten-text" ).css( "display", "block" );
+    	});
+
+    	$("#bialy-section").mouseenter(function() {
+        	$( "#top-ten-text" ).css( "display", "none" );
+    	}).mouseleave(function() {
+        	$( "#top-ten-text" ).css( "display", "block" );
+    	});
+    }); //end of doc
 
 
 
 
 
-
-
-// getting rid of copy transion home function
-
-$("#broker-section").mouseenter(function() {
-    	$( "#top-ten-text" ).css( "display", "none" );
-	}).mouseleave(function() {
-    	$( "#top-ten-text" ).css( "display", "block" );
-	});
-
-	$("#bialy-section").mouseenter(function() {
-    	$( "#top-ten-text" ).css( "display", "none" );
-	}).mouseleave(function() {
-    	$( "#top-ten-text" ).css( "display", "block" );
-	});
-
-
-
-
-
-
-}); //end of doc
 
 
 

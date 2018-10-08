@@ -7,6 +7,112 @@ a {
     cursor: url('../images/clicker-S.png'), auto;
 }
 
+/*NAVBAR CSS START*/
+
+.ul__navbar {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    position: absolute;
+    list-style-type: none;
+    padding: 0;
+}
+
+#base {
+    background: white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+#slide-one {
+    border: blue 2px solid;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow-x: hidden;
+    left: calc(100% - 35%);
+}
+
+#slide-two {
+    border: blue 2px solid;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: calc(100% - 30%);
+}
+
+#slide-three {
+    border: blue 2px solid;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: calc(100% - 25%);
+}
+
+#slide-four {
+    border: blue 2px solid;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: calc(100% - 20%);
+}
+
+#slide-five {
+    border: blue 2px solid;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: calc(100% - 15%);
+}
+
+#slide-six {
+    border: blue 2px solid;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: calc(100% - 10%);
+}
+
+#slide-seven {
+    border: blue 2px solid;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: calc(100% - 5%);
+}
+
+#slide-one:hover {
+    margin-left: -10px;
+}
+
+#slide-two:hover {
+    margin-left: -10px;
+}
+
+#slide-three:hover {
+    margin-left: -10px;
+}
+
+.h1__nav {
+    display: inline-block;
+    font-size: 24px;
+    color: blue;
+    transform: translateY(200%) translateX(-8px) rotate(-90deg);
+    position: fixed;
+}
+
+/*NAVBAR CSS END*/
+
+
 
 /*          IMAGES          */
 
