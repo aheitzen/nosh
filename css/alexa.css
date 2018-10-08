@@ -30,10 +30,6 @@ html, body {
 	overflow: scroll;
 }
 
-/*.border.border__topTen {
-	border-right: 2px solid var(--secondary-color);
-}*/
-
 .center.center__dead {
 	display: flex;
     justify-content: center;
@@ -53,13 +49,6 @@ html, body {
 
 }
 
-/*.h2.h2__top-ten:hover {
-	color: white;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: blue;
-    cursor: not-allowed;
-}*/
-
 #h2__largeText {
 	font-size: 80px;
 	text-align: center;
@@ -74,11 +63,6 @@ html, body {
     opacity: 0;
 }
 
-
-/*img:hover {
-	filter: grayscale(0);
-	mix-blend-mode: unset;
-}*/
 
 .img-container {
     /*background-position: center center;
@@ -214,20 +198,9 @@ p {
 }
 
 
-/*.whatever {
-	    margin: 0 auto;
-    max-width: 120rem;
-}
-*/
-
-/*.background.background__deserts {
-	background-color: var(--secondary-color);
-}*/
-
 .section.section__deserts {
 	border: solid blue 2px;
 	margin: 2em;
-	/*background: var(--secondary-color);*/
 }
 
 .h1.h1__deserts {
@@ -279,18 +252,16 @@ p {
 .ul.ul__ingredients {
 	list-style-type:square;
 	color: blue;
-	/*padding-left: 0;*/
 	font-family: 'Anonymous Pro', monospace;
-	 padding-left: 13px;
-	 margin-right: 5em;
+	padding-left: 13px;
+	margin-right: 5em;
 }
 
 .ul.ul__preperation {
 	list-style-type: square;
     color: blue;
-    /* padding-left: 0; */
     font-family: 'Anonymous Pro', monospace;
-        padding-left: 13px;
+    padding-left: 13px;
 }
 
 .li.li__directions--modal {
@@ -315,9 +286,6 @@ p {
     margin-bottom: 5px;
     margin-top: 85px;
 }
-/*.ul.ul__preperation {
-	
-}*/
 
 .section__ingredients {
 	grid-column: 2 /3;
@@ -333,12 +301,6 @@ p {
 	grid-column: 2 / 3;
     grid-row: 3 / 4;
 }
-
-/*.section__image {
-	grid-row: 1/ 2;
-    grid-column: 1 / 2;
-
-}*/
 
 .section__title {
 	grid-row: 1 / 2;
@@ -381,7 +343,6 @@ height: auto;
     font-weight: 500;
 }
 
-
 .modal {
   display: none;
 }
@@ -411,28 +372,12 @@ height: auto;
   	margin: 0 auto;
   	margin-top: 1em;
     margin-bottom: 1em;
-  	/*grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr;*/
-  
 }
 
 .content {
   padding-left: 25px;
 }
 
-/*.modal-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  position: absolute;
-  background: lightgray;
-  height: 45px;
-  width: 100%;
-  bottom: 0;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-}
-*/
 .modalCloseBtn {
   margin: auto 15px;
 }
