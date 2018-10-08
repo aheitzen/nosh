@@ -24,6 +24,8 @@ html, body {
 }
 
 
+
+
 .container.container__topTen {
 	border: solid 2px var(--secondary-color);
 	width: 90%;
