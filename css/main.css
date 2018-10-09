@@ -1,3 +1,5 @@
+/*          CURSOR          */
+
 html {
     cursor: url('../images/cursor-S.png'), auto;
     box-sizing: border-box;
@@ -7,7 +9,10 @@ a {
     cursor: url('../images/clicker-S.png'), auto;
 }
 
-/*NAVBAR CSS START*/
+
+
+
+/*          NAVBAR CSS START          */
 
 .ul__navbar {
     height: 100%;
@@ -19,11 +24,15 @@ a {
     padding: 0;
 }
 
-#base {
+.base {
     background: white;
     height: 100%;
     width: 100%;
     position: absolute;
+}
+
+.base__content {
+    margin: 20% 40% 10% 5%;
 }
 
 #slide-one {
@@ -42,6 +51,7 @@ a {
     height: 100%;
     width: 100%;
     position: absolute;
+    overflow-x: hidden;
     left: calc(100% - 30%);
 }
 
@@ -51,6 +61,7 @@ a {
     height: 100%;
     width: 100%;
     position: absolute;
+    overflow-x: hidden;
     left: calc(100% - 25%);
 }
 
@@ -60,6 +71,7 @@ a {
     height: 100%;
     width: 100%;
     position: absolute;
+    overflow-x: hidden;
     left: calc(100% - 20%);
 }
 
@@ -69,6 +81,7 @@ a {
     height: 100%;
     width: 100%;
     position: absolute;
+    overflow-x: hidden;
     left: calc(100% - 15%);
 }
 
@@ -78,6 +91,7 @@ a {
     height: 100%;
     width: 100%;
     position: absolute;
+    overflow-x: hidden;
     left: calc(100% - 10%);
 }
 
@@ -87,19 +101,36 @@ a {
     height: 100%;
     width: 100%;
     position: absolute;
+    overflow-x: hidden;
     left: calc(100% - 5%);
 }
 
 #slide-one:hover {
-    margin-left: -10px;
+    margin-left: -5px;
 }
 
 #slide-two:hover {
-    margin-left: -10px;
+    margin-left: -5px;
 }
 
 #slide-three:hover {
-    margin-left: -10px;
+    margin-left: -5px;
+}
+
+#slide-four:hover {
+    margin-left: -5px;
+}
+
+#slide-five:hover {
+    margin-left: -5px;
+}
+
+#slide-six:hover {
+    margin-left: -5px;
+}
+
+#slide-seven:hover {
+    margin-left: -5px;
 }
 
 .h1__nav {
@@ -114,14 +145,14 @@ a {
 
 
 
-/*          IMAGES          */
 
+/*          IMAGES          */
 
 
 img {
     opacity: 1;
     filter: grayscale(1);
-    mix-blend-mode: screen;
+    /*    mix-blend-mode: screen;*/
 }
 
 img:hover {
@@ -135,16 +166,17 @@ img:hover {
 
 
 
+
 /*          LOGO          */
 
 
-
 .mark {
-    position:sticky;
+    position: sticky;
     left: 2%;
     bottom: 2%;
     width: 300px;
     height: 300px;
+    pointer-events: none;
 }
 
 .mark.mark__logo {
@@ -165,21 +197,6 @@ img:hover {
     height: 100%;
 }
 
-
-#circle svg {
-    position: absolute;
-    left: -50;
-    top: 0;
-    width: 100%;
-    height: 540px;
-
-    animation-name: rotate;
-    animation-duration: 15s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-
-}
-
 @keyframes rotate {
     from {
         transform: rotate(-360deg);
@@ -193,13 +210,51 @@ img:hover {
 
 
 
+/*          CONTENT          */
 
+.content {
+    margin: 5% 40% 5% 5%;
+    /*
+    display: grid;
+    width: 100%;
+    height: 1vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr 1fr 200px;
+    grid-gap: 1rem;
+    */
+}
 
+h1 {}
 
+h1.h1__title {
+    font-size: 80px;
+}
 
+h3 {}
 
+h4 {}
 
+h4__itemtitle {}
 
+p {}
+
+p.interview__question {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+p.interview__answer {
+    margin: 0 15%;
+}
+
+p.interview__answer--title {
+    font-size: 1.3em;
+}
+
+.outline {
+    color: white;
+    text-shadow: 1px 1px 3px blue;
+}
 
 /*Start of Erik's starter code*/
 /* CSS Document */
