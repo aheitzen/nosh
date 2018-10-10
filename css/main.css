@@ -1,3 +1,9 @@
+/*          GLOBAL          */
+
+body {
+    margin: 0;
+}
+
 /*          CURSOR          */
 
 html {
@@ -12,6 +18,46 @@ a {
 
 
 
+/*          BANNER          */
+
+.banner {
+    width: 100%;
+    position: fixed;
+    transform: rotate(-90deg);
+    left: -50vw; 
+    top: 0px;
+    z-index: 999;
+}
+
+.banner--wrapper {
+    position: absolute;
+    overflow:visible;
+    height: 5vw;
+    color: white;
+    background-color: blue;
+    
+    animation-name: slide;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    
+    
+}
+@keyframes slide {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-40%, 0);
+    }
+}
+
+
+
 /*          NAVBAR CSS START          */
 
 .ul__navbar {
@@ -20,6 +66,7 @@ a {
     margin: 0;
     overflow-x: hidden;
     position: absolute;
+    top: 0;
     list-style-type: none;
     padding: 0;
 }
@@ -32,7 +79,7 @@ a {
 }
 
 .base__content {
-    margin: 20% 40% 10% 5%;
+    margin: 20% 40% 10% 10%;
 }
 
 #slide-one {
@@ -135,7 +182,7 @@ a {
 
 .h1__nav {
     display: inline-block;
-    font-size: 24px;
+    font-size: 32px;
     color: blue;
     transform: translateY(200%) translateX(-8px) rotate(-90deg);
     position: fixed;
@@ -173,7 +220,7 @@ img:hover {
 .mark {
     position: sticky;
     left: 2%;
-    bottom: 2%;
+    bottom: -200%;
     width: 300px;
     height: 300px;
     pointer-events: none;
