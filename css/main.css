@@ -21,38 +21,43 @@ a {
 /*          BANNER          */
 
 .banner {
-    width: 100%;
+    width: 100vw;
     position: fixed;
     transform: rotate(-90deg);
-    left: -50vw; 
-    top: 0px;
+    transform-origin: 0 0;
+    left: 0px; 
+    top: 50%;
     z-index: 999;
 }
 
 .banner--wrapper {
     position: absolute;
-    overflow:visible;
+    overflow: hidden;
     height: 5vw;
     color: white;
     background-color: blue;
     
     animation-name: slide;
-    animation-duration: 15s;
+    animation-duration: 9s;
     animation-timing-function: linear;
     animation-delay: 1s;
     animation-iteration-count: infinite;
     animation-direction: normal;
     animation-fill-mode: none;
     animation-play-state: running;
-    
-    
 }
+
+.banner--item {
+    display: inline-block;
+    margin: 0 10px;
+}
+
 @keyframes slide {
     0% {
         transform: translate(0, 0);
     }
     100% {
-        transform: translate(-40%, 0);
+        transform: translate(-100%, 0);
     }
 }
 

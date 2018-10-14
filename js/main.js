@@ -468,6 +468,3 @@ function modal() {
 }
 modal();
 
-
-
-
