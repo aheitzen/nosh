@@ -421,10 +421,149 @@ height: auto;
   }
 }
 
+/*FEATURED FARMER CSS*/
+
+.ff__grid--imgGallery {
+  display: grid;
+  grid-gap: 20px;
+
+      
+    grid-template-columns: 4fr 2fr 2fr 3fr 6fr;
+    /*grid-template-columns: repeat(12, 1fr);*/
+    
+ /*   height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, white 50%, blue 50%);*/
+    /*max-width: 600px;*/
+}
+
+/*.ff__grid--imgGallery {
+  display: grid;
+grid-template-columns: repeat(6, minmax(100px, 1fr));
+grid-gap: 20px;
+justify-items: center;
+align-content: center;
+height: 100%;
+
+
+}
+
+.ff__images--jacobs {
+  grid-column: 1 / span 4;
+  grid-row: 1;
+  position: relative;
+  z-index: 2;
+}
+
+.ff__images--one {
+  grid-column: 4 / span 3;
+  grid-row: 3;
+}*/
+
+
+/*img {
+      display: block;
+    width: 100%;
+}
+*/
+/*.ff__grid--imgGallery {
+  display: grid;
+  grid-template-areas: "hero hero cta1" "hero hero cta2";
+  grid-gap: 20px;
+}*/
+
+/*.ff__h1--title, .ff__h2--title, .ff__h3--atr {
+  grid-column: 4 / -1;
+}*/
 
 
 
     
-    
+ /*ROSS AND DAUGHTERS*/   
+ p {
+      line-height: 1.8;
+    }
+
+    img {
+      max-width: 100%;
+      max-width: 100%;
+width: 25vw;
+
+margin: 1em;
+border-radius: 50%;
+    }
+
+    a {
+      color: black;
+      text-decoration: underline wavy var(--yellow);
+    }
+
+    h1,
+    h2 {
+      font-size: 80px;
+      font-style: italic;
+      font-weight: 100;
+      margin: 0;
+    }
+
+    .post {
+      display: grid;
+      
+      margin: 200px auto;
+      grid-gap: 10px 50px;
+      grid-template-columns: 3fr 12fr 3fr;
+    }
+
+    .post>* {
+      grid-column: 2 / -2;
+    }
+
+    .post>figure {
+      margin: 0;
+      grid-column: 1 / -1;
+    }
+
+    figcaption {
+      font-size: 10px;
+    }
+
+    .post>blockquote {
+      grid-column: 1 / -1;
+      font-size: 60px;
+      font-style: italic;
+      text-align: center;
+      margin: 0;
+    }
+
+    .tip {
+      background: #FAFAFA;
+      padding: 10px;
+      grid-row: span 5;
+      align-self: start;
+    }
+
+    .tip-left {
+      grid-column: 1 / span 1;
+      text-align: right;
+      border-right: 2px solid var(--yellow);
+    }
+
+    .tip-right {
+      grid-column: span 1 / -1;
+      border-left: 2px solid var(--yellow);
+    }
+
+    .circle {
+      /*height: 200px;*/
+    width: 300px;
+    border-radius: 50%;
+    background-color: #7db9e8;
+    margin: 0 25px 5px 0;
+    float: left;
+   /* -webkit-shape-outside: circle();
+    shape-outside: circle();*/
+    shape-outside: ellipse();
+    border: solid 1px blue;
+    }
 
 

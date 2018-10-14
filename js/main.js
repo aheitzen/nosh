@@ -289,17 +289,15 @@ $(document).ready(function() {
     		"opacity": 1,
     		"transition": "ease-in 1s"
     	});
-	}).mouseleave(function() {
-    	$( "#los-angeles" ).css({
-    		"opacity": 0,
-    		"transition": "ease-out 1s"
-    	});
+	// }).mouseleave(function() {
+ //    	$( "#los-angeles" ).css({
+ //    		"opacity": 0,
+ //    		"transition": "ease-out 1s"
+ //    	});
 	});
 	// Text block function
 		$("#broker-section").mouseenter(function() {
     	$( "#bagel-broker-text" ).css( "display", "block" );
-	}).mouseleave(function() {
-    	$( "#bagel-broker-text" ).css( "display", "none" );
 	});
 	//copy-block-transition
 	$("#broker-section").mouseenter(function() {
@@ -307,11 +305,6 @@ $(document).ready(function() {
     		"height": "auto", //auto
     		"opacity": 1,
     		"transition": "ease-in 1s"
-    	});
-	}).mouseleave(function() {
-    	$( "#bagel-broker-text" ).css({
-    		"opacity": 0,
-    		"transition": "ease-out .2s",
     	});
 	});
 	// changing image on hover
@@ -334,13 +327,6 @@ $(document).ready(function() {
     		"-webkit-text-stroke-color": "blue"
     	});
     	$(".span.span__number").css("color", "blue");
-	}).mouseleave(function() {
-    	$( "#bagel-broker" ).css( "color", "blue" );
-    	$(".span.span__number").css({
-    		"color": "white", 
-    		"-webkit-text-stroke-width": "1px",
-    		"-webkit-text-stroke-color": "blue"
-    	});
 	});
     // hover over text, subheader floats up
 	$("#bialy-section").mouseenter(function() {
@@ -349,17 +335,10 @@ $(document).ready(function() {
     		"opacity": 1,
     		"transition": "ease-in 1s"
     	});
-	}).mouseleave(function() {
-    	$( "#cleveland-ohio" ).css({
-    		"opacity": 0,
-    		"transition": "ease-out 1s"
-    	});
 	});
 	// Text block function
 	$("#bialy-section").mouseenter(function() {
     	$( "#bialy-text" ).css( "display", "block" );
-	}).mouseleave(function() {
-    	$( "#bialy-text" ).css( "display", "none" );
 	});
 	//copy-block-transition
 	$("#bialy-section").mouseenter(function() {
@@ -367,11 +346,6 @@ $(document).ready(function() {
     		"height": "auto",
     		"opacity": 1,
     		"transition": "ease-in 1s"
-    	});
-	}).mouseleave(function() {
-    	$( "#bialy-text" ).css({
-    		"opacity": 0,
-    		"transition": "ease-out .2s",
     	});
 	});
 	// changing image on hover
