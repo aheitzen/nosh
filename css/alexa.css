@@ -480,23 +480,11 @@ height: 100%;
 
     
  /*ROSS AND DAUGHTERS*/   
- p {
-      line-height: 1.8;
-    }
-/*
-    img {
-      
-    }*/
 
-    a {
-      color: black;
-      text-decoration: underline wavy var(--yellow);
-    }
 
 
     .fc__header--h2 {
-          font-size: 80px;
-    /* font-style: italic; */
+      font-size: 80px;
     font-weight: 100;
     font-family: times, serif;
     /* text-align: center; */
@@ -567,34 +555,43 @@ height: 100%;
 
     .circle {
       /*height: 200px;*/
-    width: 300px;
+   /* width: 300px;
     border-radius: 50%;
     background-color: #7db9e8;
     margin: 0 25px 5px 0;
     float: left;
-   /* -webkit-shape-outside: circle();
-    shape-outside: circle();*/
     shape-outside: ellipse();
     border: solid 1px blue;
     max-width: 100%;
       max-width: 100%;
-width: 25vw;
-
-margin: 1em;
-border-radius: 50%;
+    width: 25vw;
+    margin: 1em;
+border-radius: 50%;*/
+width: 400px;
+    margin: 0 25px 5px 0;
+    float: left;
+    /*shape-outside: rectangle();*/
+    border: solid 1px blue;
+   margin-right: 30px;
     }
 
     .rectangle {
       /*height: 200px;*/
     width: 300px;
-   /* border-radius: 50%;*/
-   /* background-color: #7db9e8;*/
     margin: 0 25px 5px 0;
     float: right;
-   /* -webkit-shape-outside: circle();
-    shape-outside: circle();*/
     shape-outside: rectangle();
     border: solid 1px blue;
+    margin-left: 10px;
     }
 
+    .fc__p--body {
+        line-height: 2;
+        margin: 0;
+    }
+.fc__middleImg {
+      width: 90%;
+    display: block;
+    margin: 0 auto;
+}
 
