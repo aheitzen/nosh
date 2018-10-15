@@ -409,3 +409,109 @@ ul#nav {
 /*@media (max-width: 400px) {*/
 /*small phone*/
 /*}*/
+
+
+ /*ROSS AND DAUGHTERS*/   
+
+
+
+    .fc__header--h2 {
+      font-size: 80px;
+    font-weight: 100;
+    font-family: times, serif;
+    /* text-align: center; */
+    color: blue;
+    font-size: 80px;
+    /* margin-bottom: 0; */
+    margin: 0;
+    margin-top: 2em;
+    }
+
+    .fc__interview--header {
+      color: blue;
+      font-style: italic;
+    }
+
+    .fc__interview--span {
+      color: blue;
+      font-weight: bold;
+    }
+
+    .h3.h3__attr {
+    text-align: center;
+    font-family: var(--attribution-text);
+    font-weight: 500;
+    font-family: 'futura', sans-serif;
+    }
+
+    .fc__p--body {
+            line-height: 2;
+    margin: 0;
+    font-family: 'Anonymous Pro', monospace;
+    }
+
+    .post {
+      display: grid;
+      max-width: 1000px;
+      /*margin: 200px auto;*/
+      grid-gap: 10px 50px;
+      grid-template-columns: 1fr 12fr 1fr;
+          margin-bottom: 160px;
+    }
+
+    .post>* {
+      grid-column: 2 / -2;
+    }
+
+    .post>figure {
+      margin: 0;
+      grid-column: 1 / -1;
+    }
+
+    figcaption {
+      font-size: 10px;
+    }
+
+    .post>blockquote {
+          /* grid-column: 1 / -1; */
+    font-size: 1.5em;
+    font-style: italic;
+    text-align: center;
+    /* margin: 0; */
+    border: solid 2px blue;
+    color: blue;
+    }
+
+
+    .circle {
+    
+width: 400px;
+    margin: 0 25px 5px 0;
+    float: left;
+    /*shape-outside: rectangle();*/
+    border: solid 1px blue;
+   margin-right: 30px;
+   filter: none;
+    }
+
+    .rectangle {
+      /*height: 200px;*/
+    width: 300px;
+    margin: 0 25px 5px 0;
+    float: right;
+    shape-outside: rectangle();
+    border: solid 1px blue;
+    margin-left: 10px;
+    filter: none;
+    }
+
+    .fc__p--body {
+        line-height: 2;
+        margin: 0;
+    }
+.fc__middleImg {
+      width: 90%;
+    display: block;
+    margin: 0 auto;
+    filter: none;
+}
