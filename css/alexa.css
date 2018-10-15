@@ -65,16 +65,6 @@ html, body {
 
 
 .img-container {
-    /*background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background: blue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vh;
-    position: fixed;*/
     height: 90%;
     width: 44%; 
     position: fixed;
@@ -133,14 +123,23 @@ p {
 	opacity: 0;
 }
 
+#austin-tx {
+  height: 0;
+  margin-bottom: 0;
+  opacity: 0;
+}
+
 #bialy-text {
 	height: 0;
 	opacity: 0;
 }
 
-#top-ten-text {
-	/*height: 40em;*/
+#wholy-text {
+  height: 0;
+  opacity: 0;
 }
+
+
 
 
 .span.span__number {
@@ -151,6 +150,12 @@ p {
 
 #span-two {
 	color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: blue;
+}
+
+#span-three {
+  color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: blue;
 }

@@ -182,7 +182,7 @@ a {
 
 .h1__nav {
     display: inline-block;
-    font-size: 32px;
+    font-size: 24px;
     color: blue;
     transform: translateY(200%) translateX(-8px) rotate(-90deg);
     position: fixed;
@@ -466,8 +466,8 @@ figcaption {
 }
 
 .post > blockquote {
-    color: blue;
-    border: solid 2px blue;
+    color: #6727FB;
+    border: solid 2px #6727FB;
     text-align: center;
     font-size: 1.5em;
     font-style: italic;
@@ -501,4 +501,34 @@ figcaption {
     filter: none;
     margin: 0 auto;
     width: 90%;
+}
+
+/*ALEXA INDEX.HTML TEST CODE*/
+
+#base {
+    background-image: url("../images/landing-2.png");
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: blue 2px solid;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    height: 100vh;
+    flex-direction: column;
+}
+
+.index__center--text {
+    background: white;
+    
+        /*height: 300px;
+    width: 500px;*/
+
+    /*display: flex;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;*/
 }

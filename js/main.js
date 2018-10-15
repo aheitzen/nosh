@@ -389,6 +389,68 @@ $(document).ready(function() {
     	}).mouseleave(function() {
         	$( "#top-ten-text" ).css( "display", "block" );
     	});
+//////// THIRD BAGEL SHOP
+    // hover over text, subheader floats up
+    $("#wholy-section").mouseenter(function() {
+        $( "#austin-tx" ).css({ 
+            "height": "auto",
+            "opacity": 1,
+            "transition": "ease-in 1s"
+        });
+    });
+    // Text block function
+    $("#wholy-section").mouseenter(function() {
+        $( "#wholy-text" ).css( "display", "block" );
+    });
+    //copy-block-transition
+    $("#wholy-section").mouseenter(function() {
+        $( "#wholy-text" ).css({ 
+            "height": "auto",
+            "opacity": 1,
+            "transition": "ease-in 1s"
+        });
+    });
+    // changing image on hover
+    $("#wholy-section").mouseenter(function() {
+        $(".img.img__top-ten").attr({ 
+            "src": "images/test.jpeg",
+            "style":  "opacity: 1"
+        });
+    }).mouseleave(function() {
+        $( ".img.img__top-ten" ).css({ 
+            // "src": "images/top-ten.jpeg",
+            "display": "none"
+        });
+    });
+    $("#wholy-section").mouseenter(function() {
+        $("#bb-header").css({
+            "color": "white", 
+            "-webkit-text-stroke-width": "1px",
+            "-webkit-text-stroke-color": "blue",
+            "cursor": "not-allowed"
+        });
+        $("#span-two").css("color", "blue");
+    }).mouseleave(function() {
+        $( "#wb-header" ).css( "color", "blue" );
+        $("#span-three").css({
+            "color": "white", 
+            "-webkit-text-stroke-width": "1px",
+            "-webkit-text-stroke-color": "blue"
+        });
+    });
+    // getting rid of copy transion home function
+
+    $("#wholy-section").mouseenter(function() {
+            $( "#top-ten-text" ).css( "display", "none" );
+        }).mouseleave(function() {
+            $( "#top-ten-text" ).css( "display", "block" );
+        });
+
+        $("#wholy-section").mouseenter(function() {
+            $( "#top-ten-text" ).css( "display", "none" );
+        }).mouseleave(function() {
+            $( "#top-ten-text" ).css( "display", "block" );
+        });
     }); //end of doc
 
 
