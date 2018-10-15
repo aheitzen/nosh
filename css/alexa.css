@@ -55,8 +55,8 @@ html, body {
 }
 
 .img.img__top-ten {
-	filter: grayscale(1);
-    mix-blend-mode: screen;
+	/*filter: grayscale(1);
+    mix-blend-mode: screen;*/
     height: 40em;
     border: white 2px solid;
     transition: ease-in .5s;
@@ -66,7 +66,7 @@ html, body {
 
 .img-container {
     height: 90%;
-    width: 44%; 
+    width: 44%;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -81,8 +81,6 @@ html, body {
 	margin: 3em;
 	/*display: none;*/
 	background: rgba(255, 255, 255, 0.7);
-	/*position: relative;
-	z-index: 2;*/
 	margin-top: 1.5em;
 	line-height: 1.5;
 }
@@ -106,7 +104,6 @@ p {
 }
 
 #los-angeles {
-	/*display: none;*/
 	height: 0;
 	margin-bottom: 0;
 	opacity: 0;
@@ -139,8 +136,16 @@ p {
   opacity: 0;
 }
 
+#bb-text {
+  height: 0;
+  opacity: 0;
+}
 
-
+#georgia {
+  height: 0;
+  margin-bottom: 0;
+  opacity: 0;
+}
 
 .span.span__number {
 	color: white;

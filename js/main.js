@@ -310,7 +310,7 @@ $(document).ready(function() {
 	// changing image on hover
 	$("#broker-section").mouseenter(function() {
     	$(".img.img__top-ten").attr({ 
-    		"src": "images/R&D-5.jpg",
+    		"src": "images/bagel-1.png",
     		"style":  "opacity: 1"
     	});
 	}).mouseleave(function() {
@@ -351,12 +351,11 @@ $(document).ready(function() {
 	// changing image on hover
 	$("#bialy-section").mouseenter(function() {
     	$(".img.img__top-ten").attr({ 
-    		"src": "images/test.jpeg",
+    		"src": "images/bagel-2.png",
     		"style":  "opacity: 1"
     	});
 	}).mouseleave(function() {
     	$( ".img.img__top-ten" ).css({ 
-    		// "src": "images/top-ten.jpeg",
     		"display": "none"
     	});
 	});
@@ -413,7 +412,7 @@ $(document).ready(function() {
     // changing image on hover
     $("#wholy-section").mouseenter(function() {
         $(".img.img__top-ten").attr({ 
-            "src": "images/test.jpeg",
+            "src": "images/bagel-3.png",
             "style":  "opacity: 1"
         });
     }).mouseleave(function() {
@@ -423,13 +422,13 @@ $(document).ready(function() {
         });
     });
     $("#wholy-section").mouseenter(function() {
-        $("#bb-header").css({
+        $("#wb-header").css({
             "color": "white", 
             "-webkit-text-stroke-width": "1px",
             "-webkit-text-stroke-color": "blue",
             "cursor": "not-allowed"
         });
-        $("#span-two").css("color", "blue");
+        $("#span-three").css("color", "blue");
     }).mouseleave(function() {
         $( "#wb-header" ).css( "color", "blue" );
         $("#span-three").css({
@@ -447,6 +446,69 @@ $(document).ready(function() {
         });
 
         $("#wholy-section").mouseenter(function() {
+            $( "#top-ten-text" ).css( "display", "none" );
+        }).mouseleave(function() {
+            $( "#top-ten-text" ).css( "display", "block" );
+        });
+
+
+//////// FOURTH BAGEL SHOP
+    // hover over text, subheader floats up
+    $("#bb-section").mouseenter(function() {
+        $( "#georgia" ).css({ 
+            "height": "auto",
+            "opacity": 1,
+            "transition": "ease-in 1s"
+        });
+    });
+    // Text block function
+    $("#bb-section").mouseenter(function() {
+        $( "#bb-text" ).css( "display", "block" );
+    });
+    //copy-block-transition
+    $("#bb-section").mouseenter(function() {
+        $( "#bb-text" ).css({ 
+            "height": "auto",
+            "opacity": 1,
+            "transition": "ease-in 1s"
+        });
+    });
+    // changing image on hover
+    $("#bb-section").mouseenter(function() {
+        $(".img.img__top-ten").attr({ 
+            "src": "images/bagel-4.png",
+            "style":  "opacity: 1"
+        });
+    }).mouseleave(function() {
+        $( ".img.img__top-ten" ).css({ 
+            "display": "none"
+        });
+    });
+    $("#bb-section").mouseenter(function() {
+        $("#bagelB-header").css({
+            "color": "white", 
+            "-webkit-text-stroke-width": "1px",
+            "-webkit-text-stroke-color": "blue",
+            "cursor": "not-allowed"
+        });
+        $("#span-four").css("color", "blue");
+    }).mouseleave(function() {
+        $( "#bagelB-header" ).css( "color", "blue" );
+        $("#span-four").css({
+            "color": "white", 
+            "-webkit-text-stroke-width": "1px",
+            "-webkit-text-stroke-color": "blue"
+        });
+    });
+    // getting rid of copy transion home function
+
+    $("#bb-section").mouseenter(function() {
+            $( "#top-ten-text" ).css( "display", "none" );
+        }).mouseleave(function() {
+            $( "#top-ten-text" ).css( "display", "block" );
+        });
+
+        $("#bb-section").mouseenter(function() {
             $( "#top-ten-text" ).css( "display", "none" );
         }).mouseleave(function() {
             $( "#top-ten-text" ).css( "display", "block" );
