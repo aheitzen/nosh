@@ -14,15 +14,54 @@ var isSlideSevenOpen = false
         if (isSlideOpen) {
             //close slide
             $(slide).animate({
-                left: '+=60%'
+                top: '+=60%'
             }, 1000, 'easeOutQuad');
         } else {
             //open slide
             $(slide).animate({
-                left: '-=60%'
+                top: '-=60%'
             }, 1000, 'easeOutQuad');
         }
     }
+
+
+
+//function myFunction(x) {
+//    if (x.matches) { // If media query matches
+//        function toggleSlide(slide, isSlideOpen) {
+//            if (isSlideOpen) {
+//                //close slide
+//                $(slide).animate({
+//                    bottom: '+=60%'
+//                }, 1000, 'easeOutQuad');
+//            } else {
+//                //open slide
+//                $(slide).animate({
+//                    bottom: '-=60%'
+//                }, 1000, 'easeOutQuad');
+//            }
+//        } else {
+//            function toggleSlide(slide, isSlideOpen) {
+//                if (isSlideOpen) {
+//                    //close slide
+//                    $(slide).animate({
+//                        left: '+=60%'
+//                    }, 1000, 'easeOutQuad');
+//                } else {
+//                    //open slide
+//                    $(slide).animate({
+//                        left: '-=60%'
+//                    }, 1000, 'easeOutQuad');
+//                }
+//            }
+//        }
+//    }
+//
+//
+//    var x = window.matchMedia("(max-width: 641px)")
+//    myFunction(x) // Call listener function at run time
+//    x.addListener(myFunction) // Attach listener function on state changes
+
 
 
     $(document).ready(function () {

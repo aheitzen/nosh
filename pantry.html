@@ -390,7 +390,7 @@
                     <p class="interview__a">This 8-pointed star-shaped spice is so beautiful to look at! It looks stunning in cocktails, and tastes especially good in a white wine sangria. I buy them from a spice stall in <a href="http://en.shuktlv.co.il/category/carmel-market" target="_blank">Carmel market</a>.</p>
 
 
-                    <img src="../images/pantry_halva.jpg" alt="pantry_halva.jpg" width="500px">
+                    <img class="img--interview" src="../images/pantry_halva.jpg" alt="pantry_halva.jpg" width="500px">
 
                     <p class="interview__a interview__a--title"><a href="http://amzn.to/2jcl1VY" target="_blank">Halva</a></p>
 
@@ -411,7 +411,7 @@
                     <p class="interview__a">I use <a href="http://www.tnuvausa.com/fresh-from-the-dairy/try-something-fresh/salted-butter" target="_blank">this kosher Israeli brand</a>. I love using this for cooking as well as baking, as I think the flavor is much better than unsalted. You might think of it as a regular staple but lately, in Israel, it’s been off the shelves due to a milk shortage – the farms don’t have enough for their milk sales so they are holding back on butter manufacture. My butter-loving friends and I update each other if we see it being sold anywhere.</p>
 
 
-                    <img class="img--interview" class="" src="../images/pantry_olives.jpg" alt="pantry_olives.jpg">
+                    <img class="img--interview" src="../images/pantry_olives.jpg" alt="pantry_olives.jpg">
 
                     <p class="interview__a interview__a--title">Olives</p>
 
@@ -439,7 +439,42 @@
     <script type="text/javascript" src="js/sticky-kit.js"></script>
     <script type="text/javascript" src="js/rellax.js"></script>
     <script type="text/javascript" src="js/wow.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+
+    <script type="text/javascript" src="js/enquire.min.js"></script>
+
+<!--    <script type="text/javascript" src="js/main.js"></script>-->
+
+    <script type="text/javascript">
+        // This loads JS files in the head element
+        function loadJS(url) {
+            // adding the script tag to the head
+            var head = document.getElementsByTagName('head')[0];
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = url;
+
+            // fire the loading
+            head.appendChild(script);
+        }
+    </script>
+
+    <script type="text/javascript">
+        enquire.register("screen and (max-width: 640px)", {
+            match: function() {
+                // Load mobile JS file
+                loadJS('js/mobile.js');
+            }
+        });
+
+        enquire.register("screen and (min-width: 641px)", {
+            match: function() {
+                // Load desktop JS file
+                loadJS('js/main.js');
+                //console.log('desktop loaded');
+            }
+        });
+    </script>
+
 
 </body>
 </html>
