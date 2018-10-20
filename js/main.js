@@ -9,291 +9,278 @@ var isSlideSixOpen = false
 var isSlideSevenOpen = false
 
 function toggleSlide(slide, isSlideOpen) {
-    if(isSlideOpen) {
+    if (isSlideOpen) {
         //close slide
-        $(slide).animate( { left: '+=60%'}, 1000, 'easeOutQuad' );
-    }
-    else {
+        $(slide).animate({
+            left: '+=60%'
+        }, 1000, 'easeOutQuad');
+    } else {
         //open slide
-        $(slide).animate( { left: '-=60%' }, 1000, 'easeOutQuad' );
+        $(slide).animate({
+            left: '-=60%'
+        }, 1000, 'easeOutQuad');
     }
 }
 
-// function toggleSlide(slide, isSlideOpen) {
-//     if(isSlideOpen) {
-//         //close slide
-//         $(slide).animate( { top: '+=60%'}, 1000, 'easeOutQuad' );
-//     }
-//     else {
-//         //open slide
-//         $(slide).animate( { top: '-=60%' }, 1000, 'easeOutQuad' );
-//     }
-// }
-
 $( document ).ready(function() {
-    $( "#slide-one" ).click(function() {
+    $("#slide-one").click(function () {
         var hasChildrenOpen = false
-        //if slide 1 is closed
-        if(isSlideTwoOpen === true) {
-            toggleSlide($( "#slide-two"), isSlideTwoOpen);
+        if (isSlideTwoOpen === true) {
+            toggleSlide($("#slide-two"), isSlideTwoOpen);
             isSlideTwoOpen = false
             hasChildrenOpen = true
         }
-        if(isSlideThreeOpen === true) {
-            toggleSlide($( "#slide-three"), isSlideThreeOpen);
+        if (isSlideThreeOpen === true) {
+            toggleSlide($("#slide-three"), isSlideThreeOpen);
             isSlideThreeOpen = false
             hasChildrenOpen = true
         }
-        if(isSlideFourOpen === true) {
-            toggleSlide($( "#slide-four"), isSlideFourOpen);
+        if (isSlideFourOpen === true) {
+            toggleSlide($("#slide-four"), isSlideFourOpen);
             isSlideFourOpen = false
             hasChildrenOpen = true
         }
-        if(isSlideFiveOpen === true) {
-            toggleSlide($( "#slide-five"), isSlideFiveOpen);
+        if (isSlideFiveOpen === true) {
+            toggleSlide($("#slide-five"), isSlideFiveOpen);
             isSlideFiveOpen = false
             hasChildrenOpen = true
         }
-        if(isSlideSixOpen === true) {
-            toggleSlide($( "#slide-six"), isSlideSixOpen);
+        if (isSlideSixOpen === true) {
+            toggleSlide($("#slide-six"), isSlideSixOpen);
             isSlideSixOpen = false
             hasChildrenOpen = true
         }
-        if(isSlideSevenOpen === true) {
-            toggleSlide($( "#slide-seven"), isSlideSevenOpen);
+        if (isSlideSevenOpen === true) {
+            toggleSlide($("#slide-seven"), isSlideSevenOpen);
             isSlideSevenOpen = false
             hasChildrenOpen = true
         }
         //if children are open do not close this tab
-        if(hasChildrenOpen === false) {
-            toggleSlide($( "#slide-one" ), isSlideOneOpen);
+        if (hasChildrenOpen === false) {
+            toggleSlide($("#slide-one"), isSlideOneOpen);
             isSlideOneOpen = !isSlideOneOpen
         }
     });
-    
-    $( "#slide-two" ).click(function() {
+
+    $("#slide-two").click(function () {
         var hasChildrenOpen = false
         //if slide 2 is closed
-        if(isSlideOneOpen === false) {
-            toggleSlide($( "#slide-one"), isSlideOneOpen);
+        if (isSlideOneOpen === false) {
+            toggleSlide($("#slide-one"), isSlideOneOpen);
             isSlideOneOpen = true
         }
-        if(isSlideThreeOpen === true) {
-            toggleSlide($( "#slide-three"), isSlideThreeOpen);
+        if (isSlideThreeOpen === true) {
+            toggleSlide($("#slide-three"), isSlideThreeOpen);
             isSlideThreeOpen = false
             hasChildrenOpen = true
         }
-        if(isSlideFourOpen === true) {
-            toggleSlide($( "#slide-four"), isSlideFourOpen);
+        if (isSlideFourOpen === true) {
+            toggleSlide($("#slide-four"), isSlideFourOpen);
             isSlideFourOpen = false
             hasChildrenOpen = true
         }
-        if(isSlideFiveOpen === true) {
-            toggleSlide($( "#slide-five"), isSlideFiveOpen);
+        if (isSlideFiveOpen === true) {
+            toggleSlide($("#slide-five"), isSlideFiveOpen);
             isSlideFiveOpen = false
             hasChildrenOpen = true
         }
-        if(isSlideSixOpen === true) {
-            toggleSlide($( "#slide-six"), isSlideSixOpen);
+        if (isSlideSixOpen === true) {
+            toggleSlide($("#slide-six"), isSlideSixOpen);
             isSlideSixOpen = false
             hasChildrenOpen = true
         }
-        if(isSlideSevenOpen === true) {
-            toggleSlide($( "#slide-seven"), isSlideSevenOpen);
+        if (isSlideSevenOpen === true) {
+            toggleSlide($("#slide-seven"), isSlideSevenOpen);
             isSlideSevenOpen = false
             hasChildrenOpen = true
         }
         //if children are open do not close this tab
-        if(hasChildrenOpen === false) {
-            toggleSlide($( "#slide-two" ), isSlideTwoOpen);
+        if (hasChildrenOpen === false) {
+            toggleSlide($("#slide-two"), isSlideTwoOpen);
             isSlideTwoOpen = !isSlideTwoOpen
         }
     });
 
-    $( "#slide-three" ).click(function() {
+    $("#slide-three").click(function () {
         var hasChildrenOpen = false
         //if slide 3 is closed
-        if(isSlideOneOpen === false) {
-            toggleSlide($( "#slide-one"), isSlideOneOpen);
+        if (isSlideOneOpen === false) {
+            toggleSlide($("#slide-one"), isSlideOneOpen);
             isSlideOneOpen = true
         }
-        if(isSlideTwoOpen === false) {
-            toggleSlide($( "#slide-two"), isSlideTwoOpen);
+        if (isSlideTwoOpen === false) {
+            toggleSlide($("#slide-two"), isSlideTwoOpen);
             isSlideTwoOpen = true
         }
-        if(isSlideFourOpen === true) {
-            toggleSlide($( "#slide-four"), isSlideFourOpen);
+        if (isSlideFourOpen === true) {
+            toggleSlide($("#slide-four"), isSlideFourOpen);
             isSlideFourOpen = false
             hasChildrenOpen = true
         }
-        if(isSlideFiveOpen === true) {
-            toggleSlide($( "#slide-five"), isSlideFiveOpen);
+        if (isSlideFiveOpen === true) {
+            toggleSlide($("#slide-five"), isSlideFiveOpen);
             isSlideFiveOpen = false
             hasChildrenOpen = true
         }
-        if(isSlideSixOpen === true) {
-            toggleSlide($( "#slide-six"), isSlideSixOpen);
+        if (isSlideSixOpen === true) {
+            toggleSlide($("#slide-six"), isSlideSixOpen);
             isSlideSixOpen = false
             hasChildrenOpen = true
         }
-        if(isSlideSevenOpen === true) {
-            toggleSlide($( "#slide-seven"), isSlideSevenOpen);
+        if (isSlideSevenOpen === true) {
+            toggleSlide($("#slide-seven"), isSlideSevenOpen);
             isSlideSevenOpen = false
             hasChildrenOpen = true
         }
         //if children are open do not close this tab
-        if(hasChildrenOpen === false) {
-            toggleSlide($( "#slide-three" ), isSlideThreeOpen);
+        if (hasChildrenOpen === false) {
+            toggleSlide($("#slide-three"), isSlideThreeOpen);
             isSlideThreeOpen = !isSlideThreeOpen
         }
     });
 
-    $( "#slide-four" ).click(function() {
+    $("#slide-four").click(function () {
         var hasChildrenOpen = false
         //if slide 4 is closed
-        if(isSlideOneOpen === false) {
-            toggleSlide($( "#slide-one"), isSlideOneOpen);
+        if (isSlideOneOpen === false) {
+            toggleSlide($("#slide-one"), isSlideOneOpen);
             isSlideOneOpen = true
         }
-        if(isSlideTwoOpen === false) {
-            toggleSlide($( "#slide-two"), isSlideTwoOpen);
+        if (isSlideTwoOpen === false) {
+            toggleSlide($("#slide-two"), isSlideTwoOpen);
             isSlideTwoOpen = true
         }
-        if(isSlideThreeOpen === false) {
-            toggleSlide($( "#slide-three"), isSlideThreeOpen);
+        if (isSlideThreeOpen === false) {
+            toggleSlide($("#slide-three"), isSlideThreeOpen);
             isSlideThreeOpen = true
         }
-        if(isSlideFiveOpen === true) {
-            toggleSlide($( "#slide-five"), isSlideFiveOpen);
+        if (isSlideFiveOpen === true) {
+            toggleSlide($("#slide-five"), isSlideFiveOpen);
             isSlideFiveOpen = false
             hasChildrenOpen = true
         }
-        if(isSlideSixOpen === true) {
-            toggleSlide($( "#slide-six"), isSlideSixOpen);
+        if (isSlideSixOpen === true) {
+            toggleSlide($("#slide-six"), isSlideSixOpen);
             isSlideSixOpen = false
             hasChildrenOpen = true
         }
-        if(isSlideSevenOpen === true) {
-            toggleSlide($( "#slide-seven"), isSlideSevenOpen);
+        if (isSlideSevenOpen === true) {
+            toggleSlide($("#slide-seven"), isSlideSevenOpen);
             isSlideSevenOpen = false
             hasChildrenOpen = true
         }
         //if children are open do not close this tab
-        if(hasChildrenOpen === false) {
-            toggleSlide($( "#slide-four" ), isSlideFourOpen);
+        if (hasChildrenOpen === false) {
+            toggleSlide($("#slide-four"), isSlideFourOpen);
             isSlideFourOpen = !isSlideFourOpen
         }
     });
 
-    $( "#slide-five" ).click(function() {
+    $("#slide-five").click(function () {
         var hasChildrenOpen = false
         //if slide 5 is closed
-        if(isSlideOneOpen === false) {
-            toggleSlide($( "#slide-one"), isSlideOneOpen);
+        if (isSlideOneOpen === false) {
+            toggleSlide($("#slide-one"), isSlideOneOpen);
             isSlideOneOpen = true
         }
-        if(isSlideTwoOpen === false) {
-            toggleSlide($( "#slide-two"), isSlideTwoOpen);
+        if (isSlideTwoOpen === false) {
+            toggleSlide($("#slide-two"), isSlideTwoOpen);
             isSlideTwoOpen = true
         }
-        if(isSlideThreeOpen === false) {
-            toggleSlide($( "#slide-three"), isSlideThreeOpen);
+        if (isSlideThreeOpen === false) {
+            toggleSlide($("#slide-three"), isSlideThreeOpen);
             isSlideThreeOpen = true
         }
-        if(isSlideFourOpen === false) {
-            toggleSlide($( "#slide-four"), isSlideFourOpen);
+        if (isSlideFourOpen === false) {
+            toggleSlide($("#slide-four"), isSlideFourOpen);
             isSlideFourOpen = true
         }
-        if(isSlideSixOpen === true) {
-            toggleSlide($( "#slide-six"), isSlideSixOpen);
+        if (isSlideSixOpen === true) {
+            toggleSlide($("#slide-six"), isSlideSixOpen);
             isSlideSixOpen = false
             hasChildrenOpen = true
         }
-        if(isSlideSevenOpen === true) {
-            toggleSlide($( "#slide-seven"), isSlideSevenOpen);
+        if (isSlideSevenOpen === true) {
+            toggleSlide($("#slide-seven"), isSlideSevenOpen);
             isSlideSevenOpen = false
             hasChildrenOpen = true
         }
         //if children are open do not close this tab
-        if(hasChildrenOpen === false) {
-            toggleSlide($( "#slide-five" ), isSlideFiveOpen);
+        if (hasChildrenOpen === false) {
+            toggleSlide($("#slide-five"), isSlideFiveOpen);
             isSlideFiveOpen = !isSlideFiveOpen
         }
     });
 
-    $( "#slide-six" ).click(function() {
+    $("#slide-six").click(function () {
         var hasChildrenOpen = false
         //if slide 6 is closed
-        if(isSlideOneOpen === false) {
-            toggleSlide($( "#slide-one"), isSlideOneOpen);
+        if (isSlideOneOpen === false) {
+            toggleSlide($("#slide-one"), isSlideOneOpen);
             isSlideOneOpen = true
         }
-        if(isSlideTwoOpen === false) {
-            toggleSlide($( "#slide-two"), isSlideTwoOpen);
+        if (isSlideTwoOpen === false) {
+            toggleSlide($("#slide-two"), isSlideTwoOpen);
             isSlideTwoOpen = true
         }
-        if(isSlideThreeOpen === false) {
-            toggleSlide($( "#slide-three"), isSlideThreeOpen);
+        if (isSlideThreeOpen === false) {
+            toggleSlide($("#slide-three"), isSlideThreeOpen);
             isSlideThreeOpen = true
         }
-        if(isSlideFourOpen === false) {
-            toggleSlide($( "#slide-four"), isSlideFourOpen);
+        if (isSlideFourOpen === false) {
+            toggleSlide($("#slide-four"), isSlideFourOpen);
             isSlideFourOpen = true
         }
-        if(isSlideFiveOpen === false) {
-            toggleSlide($( "#slide-five"), isSlideFiveOpen);
+        if (isSlideFiveOpen === false) {
+            toggleSlide($("#slide-five"), isSlideFiveOpen);
             isSlideFiveOpen = true
         }
-        if(isSlideSevenOpen === true) {
-            toggleSlide($( "#slide-seven"), isSlideSevenOpen);
+        if (isSlideSevenOpen === true) {
+            toggleSlide($("#slide-seven"), isSlideSevenOpen);
             isSlideSevenOpen = false
             hasChildrenOpen = true
         }
         //if children are open do not close this tab
-        if(hasChildrenOpen === false) {
-            toggleSlide($( "#slide-six" ), isSlideSixOpen);
+        if (hasChildrenOpen === false) {
+            toggleSlide($("#slide-six"), isSlideSixOpen);
             isSlideSixOpen = !isSlideSixOpen
         }
     });
 
-    $( "#slide-seven" ).click(function() {
+    $("#slide-seven").click(function () {
         var hasChildrenOpen = false
-        if(isSlideOneOpen === false) {
-            toggleSlide($( "#slide-one"), isSlideOneOpen);
+        if (isSlideOneOpen === false) {
+            toggleSlide($("#slide-one"), isSlideOneOpen);
             isSlideOneOpen = true
         }
-        if(isSlideTwoOpen === false) {
-            toggleSlide($( "#slide-two"), isSlideTwoOpen);
+        if (isSlideTwoOpen === false) {
+            toggleSlide($("#slide-two"), isSlideTwoOpen);
             isSlideTwoOpen = true
         }
-        if(isSlideThreeOpen === false) {
-            toggleSlide($( "#slide-three"), isSlideThreeOpen);
+        if (isSlideThreeOpen === false) {
+            toggleSlide($("#slide-three"), isSlideThreeOpen);
             isSlideThreeOpen = true
         }
-        if(isSlideFourOpen === false) {
-            toggleSlide($( "#slide-four"), isSlideFourOpen);
+        if (isSlideFourOpen === false) {
+            toggleSlide($("#slide-four"), isSlideFourOpen);
             isSlideFourOpen = true
         }
-        if(isSlideFiveOpen === false) {
-            toggleSlide($( "#slide-five"), isSlideFiveOpen);
+        if (isSlideFiveOpen === false) {
+            toggleSlide($("#slide-five"), isSlideFiveOpen);
             isSlideFiveOpen = true
         }
-        if(isSlideSixOpen === false) {
-            toggleSlide($( "#slide-six"), isSlideSixOpen);
+        if (isSlideSixOpen === false) {
+            toggleSlide($("#slide-six"), isSlideSixOpen);
             isSlideSixOpen = true
         }
         //if children are open do not close this tab
-        if(hasChildrenOpen === false) {
-            toggleSlide($( "#slide-seven" ), isSlideSevenOpen);
+        if (hasChildrenOpen === false) {
+            toggleSlide($("#slide-seven"), isSlideSevenOpen);
             isSlideSevenOpen = !isSlideSevenOpen
         }
     });
-});
-
-// Nav functionality end
 
 
-$(document).ready(function() {
     // hover over text, subheader floats up
 	$("#broker-section").mouseenter(function() {
     	$( "#los-angeles" ).css({ 
@@ -389,11 +376,7 @@ $(document).ready(function() {
 	});
     // getting rid of copy transion home function
 
-    $("#broker-section").mouseenter(function() {
-        	$( "#top-ten-text" ).css( "display", "none" );
-    	}).mouseleave(function() {
-        	$( "#top-ten-text" ).css( "display", "block" );
-    	});
+    // Nav functionality end
 
     	$("#bialy-section").mouseenter(function() {
         	$( "#top-ten-text" ).css( "display", "none" );
@@ -579,69 +562,65 @@ $(document).ready(function() {
     // getting rid of copy transion home function
 
     $("#bb-section").mouseenter(function() {
-            $( "#top-ten-text" ).css( "display", "none" );
-        }).mouseleave(function() {
-            $( "#top-ten-text" ).css( "display", "block" );
-        });
+        $( "#top-ten-text" ).css( "display", "none" );
+    }).mouseleave(function() {
+        $( "#top-ten-text" ).css( "display", "block" );
+    });
 
-        $("#bb-section").mouseenter(function() {
-            $( "#top-ten-text" ).css( "display", "none" );
-        }).mouseleave(function() {
-            $( "#top-ten-text" ).css( "display", "block" );
-        });
-    }); //end of doc
+    $("#bb-section").mouseenter(function() {
+        $( "#top-ten-text" ).css( "display", "none" );
+    }).mouseleave(function() {
+        $( "#top-ten-text" ).css( "display", "block" );
+    });
+     //end of doc
+});
 
+    function modal() {
+        var modal = $(".modal")[0],
+            trigger = $(".modal-trigger")[0],
+            close = $(".modalClose");
 
-function modal() {
-  var modal = $(".modal")[0],
-    trigger = $(".modal-trigger")[0],
-    close = $(".modalClose");
+        closeModal = function () {
+            modal.classList.remove("modal-show");
+            modal.classList.add("modal-hide");
+            // Remove hide class after animation is done
+            afterAnimation = function () {
+                modal.classList.remove("modal-hide");
+            };
+            // This listens for the CSS animations to finish and then hides the modal
+            modal.addEventListener("webkitAnimationEnd", afterAnimation, false);
+            modal.addEventListener("oAnimationEnd", afterAnimation, false);
+            modal.addEventListener("msAnimationEnd", afterAnimation, false);
+            modal.addEventListener("animationend", afterAnimation, false);
+        };
 
-  closeModal = function() {
-    modal.classList.remove("modal-show");
-    modal.classList.add("modal-hide");
-    // Remove hide class after animation is done
-    afterAnimation = function() {
-      modal.classList.remove("modal-hide");
-    };
-    // This listens for the CSS animations to finish and then hides the modal
-    modal.addEventListener("webkitAnimationEnd", afterAnimation, false);
-    modal.addEventListener("oAnimationEnd", afterAnimation, false);
-    modal.addEventListener("msAnimationEnd", afterAnimation, false);
-    modal.addEventListener("animationend", afterAnimation, false);
-  };
+        // Open the modal
+        trigger.onclick = function () {
+            modal.classList.add("modal-show");
+        };
 
-  // Open the modal
-  trigger.onclick = function() {
-    modal.classList.add("modal-show");
-  };
+        // Close the modal with any element with class 'modalClose'
+        for (var i = 0; i < close.length; i++) {
+            close[i].onclick = function () {
+                closeModal();
+            };
+        }
 
-  // Close the modal with any element with class 'modalClose'
-  for (var i = 0; i < close.length; i++) {
-    close[i].onclick = function() {
-      closeModal();
-    };
-  }
+        // Click outside of the modal and close it
+        window.onclick = function (e) {
+            if (e.target == modal) {
+                closeModal();
+            }
+        };
 
-  // Click outside of the modal and close it
-  window.onclick = function(e) {
-    if (e.target == modal) {
-      closeModal();
+        // Use the escape key to close modal
+        document.onkeyup = function (e) {
+            e = e || window.event;
+            if (modal.classList.contains("modal-show")) {
+                if (e.keyCode == 27) {
+                    closeModal();
+                }
+            }
+        };
     }
-  };
-
-  // Use the escape key to close modal
-  document.onkeyup = function(e) {
-    e = e || window.event;
-    if (modal.classList.contains("modal-show")) {
-      if (e.keyCode == 27) {
-        closeModal();
-      }
-    }
-  };
-}
-modal();
-
-
-
-
+    modal();
