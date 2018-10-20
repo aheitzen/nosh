@@ -43,6 +43,7 @@ html, body {
 	color: var(--secondary-color);
 	font-size: 80px;
 	margin-bottom: 0;
+  font-weight: 100;
 }
 
 .section.section__topTen {
@@ -604,4 +605,19 @@ width: 400px;
     display: block;
     margin: 0 auto;
 }
+
+.ff__grid--main {
+  display: grid;
+  grid-template-areas: "hero hero cta1" "hero hero cta1";
+  grid-gap: 20px;
+}
+
+/*.hero {
+  grid-area: hero;
+min-height: 600px;
+background: white url(../images/lisa-jacobs.jpg);
+background-size: cover;
+
+
+}*/
 

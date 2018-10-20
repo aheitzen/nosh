@@ -19,9 +19,21 @@ function toggleSlide(slide, isSlideOpen) {
     }
 }
 
+// function toggleSlide(slide, isSlideOpen) {
+//     if(isSlideOpen) {
+//         //close slide
+//         $(slide).animate( { top: '+=60%'}, 1000, 'easeOutQuad' );
+//     }
+//     else {
+//         //open slide
+//         $(slide).animate( { top: '-=60%' }, 1000, 'easeOutQuad' );
+//     }
+// }
+
 $( document ).ready(function() {
     $( "#slide-one" ).click(function() {
         var hasChildrenOpen = false
+        //if slide 1 is closed
         if(isSlideTwoOpen === true) {
             toggleSlide($( "#slide-two"), isSlideTwoOpen);
             isSlideTwoOpen = false
@@ -495,6 +507,70 @@ $(document).ready(function() {
     }).mouseleave(function() {
         $( "#bagelB-header" ).css( "color", "blue" );
         $("#span-four").css({
+            "color": "white", 
+            "-webkit-text-stroke-width": "1px",
+            "-webkit-text-stroke-color": "blue"
+        });
+    });
+    // getting rid of copy transion home function
+
+    $("#bb-section").mouseenter(function() {
+            $( "#top-ten-text" ).css( "display", "none" );
+        }).mouseleave(function() {
+            $( "#top-ten-text" ).css( "display", "block" );
+        });
+
+        $("#bb-section").mouseenter(function() {
+            $( "#top-ten-text" ).css( "display", "none" );
+        }).mouseleave(function() {
+            $( "#top-ten-text" ).css( "display", "block" );
+        });
+
+
+
+//////// FIFTH BAGEL SHOP
+    // hover over text, subheader floats up
+    $("#water-section").mouseenter(function() {
+        $( "#georgia" ).css({ 
+            "height": "auto",
+            "opacity": 1,
+            "transition": "ease-in 1s"
+        });
+    });
+    // Text block function
+    $("#water-section").mouseenter(function() {
+        $( "#bb-text" ).css( "display", "block" );
+    });
+    //copy-block-transition
+    $("#water-section").mouseenter(function() {
+        $( "#bb-text" ).css({ 
+            "height": "auto",
+            "opacity": 1,
+            "transition": "ease-in 1s"
+        });
+    });
+    // changing image on hover
+    $("#water-section").mouseenter(function() {
+        $(".img.img__top-ten").attr({ 
+            "src": "images/bagel-4.png",
+            "style":  "opacity: 1"
+        });
+    }).mouseleave(function() {
+        $( ".img.img__top-ten" ).css({ 
+            "display": "none"
+        });
+    });
+    $("#water-section").mouseenter(function() {
+        $("#bagelB-header").css({
+            "color": "white", 
+            "-webkit-text-stroke-width": "1px",
+            "-webkit-text-stroke-color": "blue",
+            "cursor": "not-allowed"
+        });
+        $("#span-five").css("color", "blue");
+    }).mouseleave(function() {
+        $( "#bagelB-header" ).css( "color", "blue" );
+        $("#span-five").css({
             "color": "white", 
             "-webkit-text-stroke-width": "1px",
             "-webkit-text-stroke-color": "blue"
