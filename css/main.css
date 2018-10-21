@@ -92,6 +92,7 @@ a {
     position: absolute;
     overflow-x: hidden;
     left: calc(100% - 35%);
+    z-index: 4;
 }
 
 #slide-two {
@@ -102,6 +103,7 @@ a {
     position: absolute;
     overflow-x: hidden;
     left: calc(100% - 30%);
+    z-index: 5;
 }
 
 #slide-three {
@@ -112,6 +114,7 @@ a {
     position: absolute;
     overflow-x: hidden;
     left: calc(100% - 25%);
+    z-index: 6;
 }
 
 #slide-four {
@@ -122,6 +125,7 @@ a {
     position: absolute;
     overflow-x: hidden;
     left: calc(100% - 20%);
+    z-index: 7;
 }
 
 #slide-five {
@@ -132,6 +136,7 @@ a {
     position: absolute;
     overflow-x: hidden;
     left: calc(100% - 15%);
+    z-index: 8;
 }
 
 #slide-six {
@@ -142,6 +147,7 @@ a {
     position: absolute;
     overflow-x: hidden;
     left: calc(100% - 10%);
+    z-index: 9;
 }
 
 #slide-seven {
@@ -152,6 +158,7 @@ a {
     position: absolute;
     overflow-x: hidden;
     left: calc(100% - 5%);
+    z-index: 10;
 }
 
 #slide-one:hover {
@@ -198,16 +205,16 @@ a {
 /*          IMAGES          */
 
 
-img {
+/*img {
     opacity: 1;
     filter: grayscale(1);
-    /*    mix-blend-mode: screen;*/
-}
+    
+}*/
 
-img:hover {
+/*img:hover {
     filter: grayscale(0);
     mix-blend-mode: unset;
-}
+}*/
 
 .img--container {
     background: blue center center no-repeat cover;
@@ -405,6 +412,8 @@ p.interview__a--title {
         overflow-x: hidden;
         top: calc(100% - 35%);
         left: 0;
+
+
     }
 
     #slide-two {
@@ -416,6 +425,7 @@ p.interview__a--title {
         overflow-x: hidden;
         top: calc(100% - 30%);
         left: 0;
+        
     }
 
     #slide-three {
@@ -427,6 +437,7 @@ p.interview__a--title {
         overflow-x: hidden;
         top: calc(100% - 25%);
         left: 0;
+        
     }
 
     #slide-four {
@@ -438,6 +449,7 @@ p.interview__a--title {
         overflow-x: hidden;
         top: calc(100% - 20%);
         left: 0;
+        
     }
 
     #slide-five {
@@ -449,6 +461,7 @@ p.interview__a--title {
         overflow-x: hidden;
         top: calc(100% - 15%);
         left: 0;
+        
     }
 
     #slide-six {
@@ -460,6 +473,7 @@ p.interview__a--title {
         overflow-x: hidden;
         top: calc(100% - 10%);
         left: 0;
+        
     }
 
     #slide-seven {
@@ -471,6 +485,7 @@ p.interview__a--title {
         overflow-x: hidden;
         top: calc(100% - 5%);
         left: 0;
+        
     }
 
     #slide-one:hover {
@@ -723,5 +738,185 @@ figcaption {
 
 .index__center--text {
     background: white;
+}
+
+/*ALEXA RECIPIE CSS*/
+
+.desert-grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 20px;
+
+}
+
+.img.img__img--recipie {
+ 
+grid-column: 6 / 11;
+grid-row: 1 / 2;
+    height: 800px;
+    grid-column: 4 / 11;
+    margin-left: 5em;
+/*grid-column: 6 / 11;*/
+margin-bottom: 5em;
+position: relative;
+z-index: 0;
+}
+
+.h1.h1__desert--title {
+ grid-column: 2 / 9;
+grid-row: 1 / 2;
+position: relative;
+font-size: 3.5em;
+color: blue;
+    z-index: 1;
+}
+
+.p.p__desert--flavor {
+  grid-column: 2 / 6;
+grid-row: 1 / 2;
+margin-top: 11em;
+margin-left: 0;
+position: relative;
+line-height: 1.5;
+font-family: 'Anonymous Pro', monospace;
+z-index: 1;
+
+}
+
+.h3.h3__deserts--ingredients {
+ grid-column: 2/ 8;
+
+grid-row: 2 / 3;
+
+color: blue;
+
+
+
+font-size: 41px;
+
+}
+
+.p.p__deserts--matzo {
+      
+        grid-column: 2/ 5;
+    grid-row: 2 / 3;
+    
+    margin-left: 0;
+    line-height: 1.5;
+    margin-top: 12em;
+      font-family: 'Anonymous Pro', monospace;
+
+}
+
+.h4.h4__recipie--matzo {
+      grid-column: 2/ 7;
+    grid-row: 2 / 3;
+    
+    color: blue;
+    margin-left: 0;
+    font-size: 21px;
+        margin-top: 7em;
+
+}
+
+#time-matzo {
+  margin-top: 15em;
+}
+
+#serves-matzo {
+  margin-top: 18em;
+}
+
+hr {
+    border-top: 1px dashed blue;
+
+border-bottom: 1px solid blue;
+
+color: #fff;
+
+background-color: #fff;
+
+height: 4px;
+
+width: 100%;
+
+grid-row: 2 / 3;
+
+grid-column: 2 / 8;
+
+}
+
+.hr.hr__desert-matzo {
+  margin-top: 26.5em;
+}
+
+.p.p__matzo--dirrections {
+  grid-row: 3 / 3;
+grid-column: 2 / 8;
+margin-top: -27em;
+    margin-left: 0;
+    line-height: 1.5;
+          font-family: 'Anonymous Pro', monospace;
+
+}
+
+.hr.hr__recipie--one {
+      border-top: 1px dashed blue;
+
+border-bottom: 1px solid blue;
+
+color: #fff;
+
+background-color: #fff;
+
+height: 4px;
+
+width: 100%;
+
+grid-row: 2 / 3;
+
+grid-column: 2 / 8;
+margin-top: 7em;
+
+}
+
+#ingredeints-matzo {
+  grid-column: 6 / 8;
+  margin-left: -6em;
+}
+
+.ul.ul__recipie-matzo {
+  grid-column: 6 / 10;
+grid-row: 2 / 3;
+    margin-top: 12em;
+list-style-type: none;
+padding-left: 0;
+margin-left: -6em;
+}
+
+.li.li__recipie--matzo {
+  line-height: 1.5;
+  font-family: 'Anonymous Pro', monospace;
+}
+
+
+
+
+.inner.inner__margin--recipie {
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+.p.p__desert--atr {
+  font-family: 'futura', sans-serif;
+    font-weight: 500;
+    font-family: 'futura', sans-serif;
+font-weight: 500;
+grid-column: 2 / 6;
+grid-row: 1 / 2;
+margin-top: 8em;
+text-align: left;
+margin-left: 0;
 }
 
