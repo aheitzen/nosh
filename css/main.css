@@ -885,113 +885,89 @@ hr {
 
 
 .ff__grid--main {
-  display: grid;
-  /*grid-template-columns: repeat(12, 1fr);*/
-  grid-template-columns: 1fr 12fr 1fr;
-  /*grid-template-rows: 200px 200px 200px;*/
-  grid-gap: 20px;
-
+    display: grid;
+    grid-template-columns: 1fr 12fr 1fr;
     grid-gap: 10px 50px;
-    
     margin-bottom: 160px;
     max-width: 1080px;
 }
 
 .h1.h1__ff--title {
-  color: blue;
-
-font-family: times, serif;
-
-font-size: 80px;
-
-font-weight: 100;
-
-margin: 0;
-
-    margin-top: 0px;
-
-margin-top: 80px;
-
-grid-column: 2 / -2;
-
-/*grid-row: 1 / 2;*/
+    color: blue;
+    font-family: times, serif;
+    font-size: 80px;
+    font-weight: 100;
+    grid-column: 2 / -2;
+    margin: 0;
+    margin-top: 80px;
 }
 
 .h2.h2__ff--subtitle {
-  color: blue;
+    color: blue;
+    font-size: 20px;
     font-style: italic;
     grid-column: 2;
     text-align: left;
-    font-size: 20px;
 }
 
 .p.p__ff-bodyText {
-  line-height: 2;
-
-font-family: 'Anonymous Pro', monospace;
-
-/*grid-row: 3 / 4;*/
-
-/*grid-column: 2 / 12;*/
-grid-column: 2 / -2;
-margin-left: 0;
+    font-family: 'Anonymous Pro', monospace;
+    grid-column: 2 / -2;
+    line-height: 2;
     margin-bottom: 0;
-
+    margin-left: 0;
 }
 
 .ff__circle--test {
-    height: 400px;
-    width: 400px;
-    border-radius: 50%;
     background-color: #7db9e8;
-    margin: 0 25px 5px 0;
-    float: left;
-    -webkit-shape-outside: circle();
-    shape-outside: circle();
-    /*grid-column: 2 /4;*/
     background-image: url("../images/lisa-jacobs.png");
-        background-size: cover;
-            background-position: center center;
+    background-position: center center;
     background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    float: left;
+    height: 400px;
+    margin: 0 25px 5px 0;
     margin-left: -30px;
+    shape-outside: circle();
+    -webkit-shape-outside: circle();
+    width: 400px;    
 }
 
 .test-shape--ff {
-  grid-column: 2 / -2;
+    grid-column: 2 / -2;
 }
 
 .img.img__ff--bottom {
-      filter: none;
+    filter: none;
     float: right;
     margin: 0 25px 5px 0;
     margin-left: 10px;
-    
-        width: 346px;
+    width: 346px;
 }
 
 .h3.h3__ff--art {
-      font-family: 'futura', sans-serif;
+    font-family: 'futura', sans-serif;
     font-weight: 500;
     grid-column: 2 / 6;
     grid-row: 3 / 3;
     margin-left: 0;
-    
     text-align: left;
 }
 
 .blockquote__ff--quotes {
-    color: #6727FB;
     border: solid 2px #6727FB;
-    text-align: center;
+    color: #6727FB;
     font-size: 1.5em;
     font-style: italic;
-        width: 36%;
     margin-top: 0;
+    text-align: center;
+    width: 36%;
 }
 
 .ff__p--quote {
-        line-height: 2;
-        margin: 0;
-        padding: 10px;
-    }
+    line-height: 2;
+    margin: 0;
+    padding: 10px;
+}
 
