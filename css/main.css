@@ -773,7 +773,7 @@ h2#fc__header--h2 {
     font-family: 'Anonymous Pro', monospace;
     line-height: 1.5;
     margin-left: 0;
-    margin-top: 11em;
+    margin-top: 16em;
     position: relative;
     z-index: 1;
 }
@@ -867,7 +867,7 @@ hr {
 }
 
 .inner.inner__margin--recipie {
-    margin-bottom: 5em;
+    margin-bottom: 160px;
     margin-top: 5em;
 }
 
@@ -877,7 +877,121 @@ hr {
     grid-column: 2 / 6;
     grid-row: 1 / 2;
     margin-left: 0;
-    margin-top: 8em;
+    margin-top: 13em;
     text-align: left;
 }
+
+/*FEATURED FARMER SECTION*/
+
+
+.ff__grid--main {
+  display: grid;
+  /*grid-template-columns: repeat(12, 1fr);*/
+  grid-template-columns: 1fr 12fr 1fr;
+  /*grid-template-rows: 200px 200px 200px;*/
+  grid-gap: 20px;
+
+    grid-gap: 10px 50px;
+    
+    margin-bottom: 160px;
+    max-width: 1080px;
+}
+
+.h1.h1__ff--title {
+  color: blue;
+
+font-family: times, serif;
+
+font-size: 80px;
+
+font-weight: 100;
+
+margin: 0;
+
+    margin-top: 0px;
+
+margin-top: 80px;
+
+grid-column: 2 / -2;
+
+/*grid-row: 1 / 2;*/
+}
+
+.h2.h2__ff--subtitle {
+  color: blue;
+    font-style: italic;
+    grid-column: 2;
+    text-align: left;
+    font-size: 20px;
+}
+
+.p.p__ff-bodyText {
+  line-height: 2;
+
+font-family: 'Anonymous Pro', monospace;
+
+/*grid-row: 3 / 4;*/
+
+/*grid-column: 2 / 12;*/
+grid-column: 2 / -2;
+margin-left: 0;
+    margin-bottom: 0;
+
+}
+
+.ff__circle--test {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: #7db9e8;
+    margin: 0 25px 5px 0;
+    float: left;
+    -webkit-shape-outside: circle();
+    shape-outside: circle();
+    /*grid-column: 2 /4;*/
+    background-image: url("../images/lisa-jacobs.png");
+        background-size: cover;
+            background-position: center center;
+    background-repeat: no-repeat;
+    margin-left: -30px;
+}
+
+.test-shape--ff {
+  grid-column: 2 / -2;
+}
+
+.img.img__ff--bottom {
+      filter: none;
+    float: right;
+    margin: 0 25px 5px 0;
+    margin-left: 10px;
+    
+        width: 346px;
+}
+
+.h3.h3__ff--art {
+      font-family: 'futura', sans-serif;
+    font-weight: 500;
+    grid-column: 2 / 6;
+    grid-row: 3 / 3;
+    margin-left: 0;
+    
+    text-align: left;
+}
+
+.blockquote__ff--quotes {
+    color: #6727FB;
+    border: solid 2px #6727FB;
+    text-align: center;
+    font-size: 1.5em;
+    font-style: italic;
+        width: 36%;
+    margin-top: 0;
+}
+
+.ff__p--quote {
+        line-height: 2;
+        margin: 0;
+        padding: 10px;
+    }
 

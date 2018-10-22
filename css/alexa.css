@@ -872,12 +872,24 @@ margin-left: 0;
         margin: 0;
         padding: 10px;
     }
-/*.hero {
-  grid-area: hero;
-min-height: 600px;
-background: white url(../images/lisa-jacobs.jpg);
-background-size: cover;
 
-
+/*.h3.h3__cheese--ingredients {
+  color: blue;
+    font-size: 41px;
+    grid-column: 2 / -2;
+    
 }*/
+
+/*.hr.hr__cheese-hr {
+  background-color: #fff;
+    border-bottom: 1px solid blue;
+    border-top: 1px dashed blue;
+    color: #fff;
+    height: 4px;
+    grid-column: 2 / -2;
+    grid-row: 8;
+    
+}*/
+
+
 
