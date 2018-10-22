@@ -152,6 +152,38 @@
 <script type="text/javascript" src="js/sticky-kit.js"></script>
 <script type="text/javascript" src="js/rellax.js"></script>
 <script type="text/javascript" src="js/wow.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/enquire.min.js"></script>
+<!-- <script type="text/javascript" src="js/main.js"></script> -->
+
+    <script type="text/javascript">
+        // This loads JS files in the head element
+        function loadJS(url) {
+            // adding the script tag to the head
+            var head = document.getElementsByTagName('head')[0];
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = url;
+
+            // fire the loading
+            head.appendChild(script);
+        }
+    </script>
+
+    <script type="text/javascript">
+        enquire.register("screen and (max-width: 640px)", {
+            match: function() {
+                // Load mobile JS file
+                loadJS('js/mobile.js');
+            }
+        });
+
+        enquire.register("screen and (min-width: 641px)", {
+            match: function() {
+                // Load desktop JS file
+                loadJS('js/main.js');
+                //console.log('desktop loaded');
+            }
+        });
+    </script>
 </body>
 </html>
