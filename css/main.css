@@ -21,15 +21,32 @@ a {
 /*          BANNER          */
 
 .banner {
-    width: 200vh;
-    position: fixed;
+    height: 45px;
+    max-width: 1000px;
+    margin: 5%;
+    position:relative;
+    overflow: hidden;
+    transform-origin: -2% bottom;
     transform: rotate(-90deg);
-    transform-origin: 0 0;
-    left: 0px;
-    top: 50%;
-    z-index: 999;
+    
 }
 
+.banner .banner__logo {
+  background: url(../images/NOSH.png);
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 3000%;
+  animation: dripp 60s linear infinite;
+}
+
+@keyframes dripp {
+  0%    { left: -200%; }
+  100%  { left: -1000%; }
+}
+
+/*
 .banner--wrapper {
     position: absolute;
     overflow: hidden;
@@ -47,6 +64,7 @@ a {
     white-space: nowrap;
     width: auto;
 }
+*/
 
 @keyframes ticker {
     0% {
@@ -278,6 +296,61 @@ a {
     height: auto;
 }
 
+.content__six {
+    display: grid;
+    grid-template-columns: 1fr 12fr 1fr;
+    grid-gap: 10px 50px;
+    max-width: 65%;
+    margin-bottom: 160px;
+}
+
+.content__six * {
+    grid-column: 2 / -2;
+}
+
+.content__six .h3__subtitle {
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.content__six .h4--guide {
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: 700;
+    font-size: 1.5em;
+    color: blue;
+    font-style: italic;
+}
+
+.content__six .p--guide {
+    font-family: 'futura', sans-serif;
+    font-weight: 400;
+}
+
+.content__six blockquote {
+    color: #6727FB;
+    outline: solid 1px #6727FB;
+    padding: 2.5%;
+    font-size: .9em;
+}
+
+.content__six .ul__terms {
+
+    grid-column: 6 / 10;
+    grid-row: 2 / 3;
+    list-style-type:none;
+    margin-left: 0em;
+    margin-top: 2em;
+}
+
+.content__six .li__terms {
+    font-family: 'Anonymous Pro', monospace;
+    line-height: 1.2;
+    padding-bottom: 2vh;
+}
+
+
+
 .content__seven {
     display: grid;
     max-width: 55%;
@@ -285,7 +358,7 @@ a {
     height: 3200px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(20, 1fr);
-    grid-gap: 12px;
+    grid-gap: 20px;
 }
 
 .content__seven .h1__title {
@@ -304,31 +377,47 @@ a {
     grid-row: 2 / 3;
 }
 
-.content__seven .interviewgroup--one {
-    grid-column: 3 / 11;
+.content__seven .pantry__interview {
+    grid-column: 3 / 12;
     grid-row: 3 / 9;
 }
 
-.content__seven .interviewgroup--two {
-    grid-column: 3 / 11;
-    grid-row: 9 / 20;
-}
 
 .content__seven .img--interview {
-    width: 300px;
+    width: 30%;
+    float: left;
+    margin-right: 30px;
 }
 
-.content__seven.interviewgroup--two .interview__a {
-    grid-column: 5/11;
+.content__seven .pantry__item {
+    margin-bottom: 5em;
 }
 
-h1 {}
+.pantry__item p.interview__a {
+    margin-left: 0;
+}
+
+h1 {
+    font-family: 'Times New Roman', serif;
+    
+}
 
 h1.h1__title {
     font-size: 80px;
+    color: blue;
+    font-weight: 100;
+    margin-left: 2em;
 }
 
-h3 {}
+h3 {
+    font-family: 'futura', sans-serif;
+    font-weight: 500;
+    text-align: left;
+    grid-column: 2 / 6;
+    grid-row: 1 / 2;
+    margin-left: 0;
+    margin-top: 4em;
+}
 
 h4 {}
 
@@ -337,12 +426,17 @@ h4__itemtitle {}
 p {}
 
 p.interview__q {
-    font-size: 1.2em;
+    font-family: 'futura', sans-serif;
+    font-weight: 500;
+    font-size: 1.1em;
+    color: blue;
     font-style: italic;
 }
 
 p.interview__a {
     margin: 0 0 2% 5%;
+    font-family: 'Anonymous Pro', monospace;
+    line-height: 1.5;
 }
 
 p.interview__a--title {
@@ -732,7 +826,7 @@ h2#fc__header--h2 {
 }
 
 .index__center--text {
-    background: white;
+/*    background: white;*/
 }
 
 /*ALEXA RECIPE CSS*/
