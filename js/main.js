@@ -17,12 +17,12 @@ function toggleSlide(slide, isSlideOpen) {
     } else {
         //open slide
         $(slide).animate({
-            left: '-=60%'
-        }, 1000, 'easeOutQuad');
+                left: '-=60%'
+            }, 1000, 'easeOutQuad');
     }
 }
 
-$( document ).ready(function() {
+$(document).ready(function () {
     $("#slide-one").click(function () {
         var hasChildrenOpen = false
         if (isSlideTwoOpen === true) {
@@ -282,345 +282,345 @@ $( document ).ready(function() {
 
 
     // hover over text, subheader floats up
-	$("#broker-section").mouseenter(function() {
-    	$( "#los-angeles" ).css({ 
-    		"height": "auto",
-    		"opacity": 1,
-    		"transition": "ease-in 1s"
-    	});
-	// }).mouseleave(function() {
- //    	$( "#los-angeles" ).css({
- //    		"opacity": 0,
- //    		"transition": "ease-out 1s"
- //    	});
-	});
-	// Text block function
-		$("#broker-section").mouseenter(function() {
-    	$( "#bagel-broker-text" ).css( "display", "block" );
-	});
-	//copy-block-transition
-	$("#broker-section").mouseenter(function() {
-    	$( "#bagel-broker-text" ).css({ 
-    		"height": "auto", //auto
-    		"opacity": 1,
-    		"transition": "ease-in 1s"
-    	});
-	});
-	// changing image on hover
-	$("#broker-section").mouseenter(function() {
-    	$(".img.img__top-ten").attr({ 
-    		"src": "images/bagel-1.png",
-    		"style":  "opacity: 1"
-    	});
-	}).mouseleave(function() {
-    	$( ".img.img__top-ten" ).css({ 
-    		// "src": "images/top-ten.jpeg",
-    		"display": "none"
+    $("#broker-section").mouseenter(function () {
+        $("#los-angeles").css({
+            "height": "auto",
+            "opacity": 1,
+            "transition": "ease-in 1s"
+        });
+        // }).mouseleave(function() {
+        //    	$( "#los-angeles" ).css({
+        //    		"opacity": 0,
+        //    		"transition": "ease-out 1s"
+        //    	});
+    });
+    // Text block function
+    $("#broker-section").mouseenter(function () {
+        $("#bagel-broker-text").css("display", "block");
+    });
+    //copy-block-transition
+    $("#broker-section").mouseenter(function () {
+        $("#bagel-broker-text").css({
+            "height": "auto", //auto
+            "opacity": 1,
+            "transition": "ease-in 1s"
+        });
+    });
+    // changing image on hover
+    $("#broker-section").mouseenter(function () {
+        $(".img.img__top-ten").attr({
+            "src": "images/bagel-1.png",
+            "style": "opacity: 1"
+        });
+    }).mouseleave(function () {
+        $(".img.img__top-ten").css({
+            // "src": "images/top-ten.jpeg",
+            "display": "none"
 
-    	});
-	});
-	$("#broker-section").mouseenter(function() {
-    	$("#bagel-broker").css({
-    		"color": "white", 
-    		"-webkit-text-stroke-width": "1px",
-    		"-webkit-text-stroke-color": "blue"
-    	});
-    	$(".span.span__number").css("color", "blue");
-	});
+        });
+    });
+    $("#broker-section").mouseenter(function () {
+        $("#bagel-broker").css({
+            "color": "white",
+            "-webkit-text-stroke-width": "1px",
+            "-webkit-text-stroke-color": "blue"
+        });
+        $(".span.span__number").css("color", "blue");
+    });
     // hover over text, subheader floats up
-	$("#bialy-section").mouseenter(function() {
-    	$( "#cleveland-ohio" ).css({ 
-    		"height": "auto",
-    		"opacity": 1,
-    		"transition": "ease-in 1s"
-    	});
-	});
-	// Text block function
-	$("#bialy-section").mouseenter(function() {
-    	$( "#bialy-text" ).css( "display", "block" );
-	});
-	//copy-block-transition
-	$("#bialy-section").mouseenter(function() {
-    	$( "#bialy-text" ).css({ 
-    		"height": "auto",
-    		"opacity": 1,
-    		"transition": "ease-in 1s"
-    	});
-	});
-	// changing image on hover
-	$("#bialy-section").mouseenter(function() {
-    	$(".img.img__top-ten").attr({ 
-    		"src": "images/bagel-2.png",
-    		"style":  "opacity: 1"
-    	});
-	}).mouseleave(function() {
-    	$( ".img.img__top-ten" ).css({ 
-    		"display": "none"
-    	});
-	});
-	$("#bialy-section").mouseenter(function() {
-    	$("#bb-header").css({
-    		"color": "white", 
-    		"-webkit-text-stroke-width": "1px",
-    		"-webkit-text-stroke-color": "blue",
-    		"cursor": "not-allowed"
-    	});
-    	$("#span-two").css("color", "blue");
-	}).mouseleave(function() {
-    	$( "#bb-header" ).css( "color", "blue" );
-    	$("#span-two").css({
-    		"color": "white", 
-    		"-webkit-text-stroke-width": "1px",
-    		"-webkit-text-stroke-color": "blue"
-    	});
-	});
-    // getting rid of copy transion home function
-
-    // Nav functionality end
-
-    	$("#bialy-section").mouseenter(function() {
-        	$( "#top-ten-text" ).css( "display", "none" );
-    	}).mouseleave(function() {
-        	$( "#top-ten-text" ).css( "display", "block" );
-    	});
-//////// THIRD BAGEL SHOP
-    // hover over text, subheader floats up
-    $("#wholy-section").mouseenter(function() {
-        $( "#austin-tx" ).css({ 
+    $("#bialy-section").mouseenter(function () {
+        $("#cleveland-ohio").css({
             "height": "auto",
             "opacity": 1,
             "transition": "ease-in 1s"
         });
     });
     // Text block function
-    $("#wholy-section").mouseenter(function() {
-        $( "#wholy-text" ).css( "display", "block" );
+    $("#bialy-section").mouseenter(function () {
+        $("#bialy-text").css("display", "block");
     });
     //copy-block-transition
-    $("#wholy-section").mouseenter(function() {
-        $( "#wholy-text" ).css({ 
+    $("#bialy-section").mouseenter(function () {
+        $("#bialy-text").css({
             "height": "auto",
             "opacity": 1,
             "transition": "ease-in 1s"
         });
     });
     // changing image on hover
-    $("#wholy-section").mouseenter(function() {
-        $(".img.img__top-ten").attr({ 
-            "src": "images/bagel-3.png",
-            "style":  "opacity: 1"
+    $("#bialy-section").mouseenter(function () {
+        $(".img.img__top-ten").attr({
+            "src": "images/bagel-2.png",
+            "style": "opacity: 1"
         });
-    }).mouseleave(function() {
-        $( ".img.img__top-ten" ).css({ 
+    }).mouseleave(function () {
+        $(".img.img__top-ten").css({
+            "display": "none"
+        });
+    });
+    $("#bialy-section").mouseenter(function () {
+        $("#bb-header").css({
+            "color": "white",
+            "-webkit-text-stroke-width": "1px",
+            "-webkit-text-stroke-color": "blue",
+            "cursor": "not-allowed"
+        });
+        $("#span-two").css("color", "blue");
+    }).mouseleave(function () {
+        $("#bb-header").css("color", "blue");
+        $("#span-two").css({
+            "color": "white",
+            "-webkit-text-stroke-width": "1px",
+            "-webkit-text-stroke-color": "blue"
+        });
+    });
+    // getting rid of copy transion home function
+
+    // Nav functionality end
+
+    $("#bialy-section").mouseenter(function () {
+        $("#top-ten-text").css("display", "none");
+    }).mouseleave(function () {
+        $("#top-ten-text").css("display", "block");
+    });
+    //////// THIRD BAGEL SHOP
+    // hover over text, subheader floats up
+    $("#wholy-section").mouseenter(function () {
+        $("#austin-tx").css({
+            "height": "auto",
+            "opacity": 1,
+            "transition": "ease-in 1s"
+        });
+    });
+    // Text block function
+    $("#wholy-section").mouseenter(function () {
+        $("#wholy-text").css("display", "block");
+    });
+    //copy-block-transition
+    $("#wholy-section").mouseenter(function () {
+        $("#wholy-text").css({
+            "height": "auto",
+            "opacity": 1,
+            "transition": "ease-in 1s"
+        });
+    });
+    // changing image on hover
+    $("#wholy-section").mouseenter(function () {
+        $(".img.img__top-ten").attr({
+            "src": "images/bagel-3.png",
+            "style": "opacity: 1"
+        });
+    }).mouseleave(function () {
+        $(".img.img__top-ten").css({
             // "src": "images/top-ten.jpeg",
             "display": "none"
         });
     });
-    $("#wholy-section").mouseenter(function() {
+    $("#wholy-section").mouseenter(function () {
         $("#wb-header").css({
-            "color": "white", 
+            "color": "white",
             "-webkit-text-stroke-width": "1px",
             "-webkit-text-stroke-color": "blue",
             "cursor": "not-allowed"
         });
         $("#span-three").css("color", "blue");
-    }).mouseleave(function() {
-        $( "#wb-header" ).css( "color", "blue" );
+    }).mouseleave(function () {
+        $("#wb-header").css("color", "blue");
         $("#span-three").css({
-            "color": "white", 
+            "color": "white",
             "-webkit-text-stroke-width": "1px",
             "-webkit-text-stroke-color": "blue"
         });
     });
     // getting rid of copy transion home function
 
-    $("#wholy-section").mouseenter(function() {
-            $( "#top-ten-text" ).css( "display", "none" );
-        }).mouseleave(function() {
-            $( "#top-ten-text" ).css( "display", "block" );
-        });
+    $("#wholy-section").mouseenter(function () {
+        $("#top-ten-text").css("display", "none");
+    }).mouseleave(function () {
+        $("#top-ten-text").css("display", "block");
+    });
 
-        $("#wholy-section").mouseenter(function() {
-            $( "#top-ten-text" ).css( "display", "none" );
-        }).mouseleave(function() {
-            $( "#top-ten-text" ).css( "display", "block" );
-        });
+    $("#wholy-section").mouseenter(function () {
+        $("#top-ten-text").css("display", "none");
+    }).mouseleave(function () {
+        $("#top-ten-text").css("display", "block");
+    });
 
 
-//////// FOURTH BAGEL SHOP
+    //////// FOURTH BAGEL SHOP
     // hover over text, subheader floats up
-    $("#bb-section").mouseenter(function() {
-        $( "#georgia" ).css({ 
+    $("#bb-section").mouseenter(function () {
+        $("#georgia").css({
             "height": "auto",
             "opacity": 1,
             "transition": "ease-in 1s"
         });
     });
     // Text block function
-    $("#bb-section").mouseenter(function() {
-        $( "#bb-text" ).css( "display", "block" );
+    $("#bb-section").mouseenter(function () {
+        $("#bb-text").css("display", "block");
     });
     //copy-block-transition
-    $("#bb-section").mouseenter(function() {
-        $( "#bb-text" ).css({ 
+    $("#bb-section").mouseenter(function () {
+        $("#bb-text").css({
             "height": "auto",
             "opacity": 1,
             "transition": "ease-in 1s"
         });
     });
     // changing image on hover
-    $("#bb-section").mouseenter(function() {
-        $(".img.img__top-ten").attr({ 
+    $("#bb-section").mouseenter(function () {
+        $(".img.img__top-ten").attr({
             "src": "images/bagel-4.png",
-            "style":  "opacity: 1"
+            "style": "opacity: 1"
         });
-    }).mouseleave(function() {
-        $( ".img.img__top-ten" ).css({ 
+    }).mouseleave(function () {
+        $(".img.img__top-ten").css({
             "display": "none"
         });
     });
-    $("#bb-section").mouseenter(function() {
+    $("#bb-section").mouseenter(function () {
         $("#bagelB-header").css({
-            "color": "white", 
+            "color": "white",
             "-webkit-text-stroke-width": "1px",
             "-webkit-text-stroke-color": "blue",
             "cursor": "not-allowed"
         });
         $("#span-four").css("color", "blue");
-    }).mouseleave(function() {
-        $( "#bagelB-header" ).css( "color", "blue" );
+    }).mouseleave(function () {
+        $("#bagelB-header").css("color", "blue");
         $("#span-four").css({
-            "color": "white", 
+            "color": "white",
             "-webkit-text-stroke-width": "1px",
             "-webkit-text-stroke-color": "blue"
         });
     });
     // getting rid of copy transion home function
 
-    $("#bb-section").mouseenter(function() {
-            $( "#top-ten-text" ).css( "display", "none" );
-        }).mouseleave(function() {
-            $( "#top-ten-text" ).css( "display", "block" );
-        });
+    $("#bb-section").mouseenter(function () {
+        $("#top-ten-text").css("display", "none");
+    }).mouseleave(function () {
+        $("#top-ten-text").css("display", "block");
+    });
 
-        $("#bb-section").mouseenter(function() {
-            $( "#top-ten-text" ).css( "display", "none" );
-        }).mouseleave(function() {
-            $( "#top-ten-text" ).css( "display", "block" );
-        });
+    $("#bb-section").mouseenter(function () {
+        $("#top-ten-text").css("display", "none");
+    }).mouseleave(function () {
+        $("#top-ten-text").css("display", "block");
+    });
 
 
 
-//////// FIFTH BAGEL SHOP
+    //////// FIFTH BAGEL SHOP
     // hover over text, subheader floats up
-    $("#water-section").mouseenter(function() {
-        $( "#georgia" ).css({ 
+    $("#water-section").mouseenter(function () {
+        $("#georgia").css({
             "height": "auto",
             "opacity": 1,
             "transition": "ease-in 1s"
         });
     });
     // Text block function
-    $("#water-section").mouseenter(function() {
-        $( "#bb-text" ).css( "display", "block" );
+    $("#water-section").mouseenter(function () {
+        $("#bb-text").css("display", "block");
     });
     //copy-block-transition
-    $("#water-section").mouseenter(function() {
-        $( "#bb-text" ).css({ 
+    $("#water-section").mouseenter(function () {
+        $("#bb-text").css({
             "height": "auto",
             "opacity": 1,
             "transition": "ease-in 1s"
         });
     });
     // changing image on hover
-    $("#water-section").mouseenter(function() {
-        $(".img.img__top-ten").attr({ 
+    $("#water-section").mouseenter(function () {
+        $(".img.img__top-ten").attr({
             "src": "images/bagel-4.png",
-            "style":  "opacity: 1"
+            "style": "opacity: 1"
         });
-    }).mouseleave(function() {
-        $( ".img.img__top-ten" ).css({ 
+    }).mouseleave(function () {
+        $(".img.img__top-ten").css({
             "display": "none"
         });
     });
-    $("#water-section").mouseenter(function() {
+    $("#water-section").mouseenter(function () {
         $("#bagelB-header").css({
-            "color": "white", 
+            "color": "white",
             "-webkit-text-stroke-width": "1px",
             "-webkit-text-stroke-color": "blue",
             "cursor": "not-allowed"
         });
         $("#span-five").css("color", "blue");
-    }).mouseleave(function() {
-        $( "#bagelB-header" ).css( "color", "blue" );
+    }).mouseleave(function () {
+        $("#bagelB-header").css("color", "blue");
         $("#span-five").css({
-            "color": "white", 
+            "color": "white",
             "-webkit-text-stroke-width": "1px",
             "-webkit-text-stroke-color": "blue"
         });
     });
     // getting rid of copy transion home function
 
-    $("#bb-section").mouseenter(function() {
-        $( "#top-ten-text" ).css( "display", "none" );
-    }).mouseleave(function() {
-        $( "#top-ten-text" ).css( "display", "block" );
+    $("#bb-section").mouseenter(function () {
+        $("#top-ten-text").css("display", "none");
+    }).mouseleave(function () {
+        $("#top-ten-text").css("display", "block");
     });
 
-    $("#bb-section").mouseenter(function() {
-        $( "#top-ten-text" ).css( "display", "none" );
-    }).mouseleave(function() {
-        $( "#top-ten-text" ).css( "display", "block" );
+    $("#bb-section").mouseenter(function () {
+        $("#top-ten-text").css("display", "none");
+    }).mouseleave(function () {
+        $("#top-ten-text").css("display", "block");
     });
-     //end of doc
+    //end of doc
 });
 
-    // function modal() {
-    //     var modal = $(".modal")[0],
-    //         trigger = $(".modal-trigger")[0],
-    //         close = $(".modalClose");
+// function modal() {
+//     var modal = $(".modal")[0],
+//         trigger = $(".modal-trigger")[0],
+//         close = $(".modalClose");
 
-    //     closeModal = function () {
-    //         modal.classList.remove("modal-show");
-    //         modal.classList.add("modal-hide");
-    //         // Remove hide class after animation is done
-    //         afterAnimation = function () {
-    //             modal.classList.remove("modal-hide");
-    //         };
-    //         // This listens for the CSS animations to finish and then hides the modal
-    //         modal.addEventListener("webkitAnimationEnd", afterAnimation, false);
-    //         modal.addEventListener("oAnimationEnd", afterAnimation, false);
-    //         modal.addEventListener("msAnimationEnd", afterAnimation, false);
-    //         modal.addEventListener("animationend", afterAnimation, false);
-    //     };
+//     closeModal = function () {
+//         modal.classList.remove("modal-show");
+//         modal.classList.add("modal-hide");
+//         // Remove hide class after animation is done
+//         afterAnimation = function () {
+//             modal.classList.remove("modal-hide");
+//         };
+//         // This listens for the CSS animations to finish and then hides the modal
+//         modal.addEventListener("webkitAnimationEnd", afterAnimation, false);
+//         modal.addEventListener("oAnimationEnd", afterAnimation, false);
+//         modal.addEventListener("msAnimationEnd", afterAnimation, false);
+//         modal.addEventListener("animationend", afterAnimation, false);
+//     };
 
-    //     // Open the modal
-    //     trigger.onclick = function () {
-    //         modal.classList.add("modal-show");
-    //     };
+//     // Open the modal
+//     trigger.onclick = function () {
+//         modal.classList.add("modal-show");
+//     };
 
-    //     // Close the modal with any element with class 'modalClose'
-    //     for (var i = 0; i < close.length; i++) {
-    //         close[i].onclick = function () {
-    //             closeModal();
-    //         };
-    //     }
+//     // Close the modal with any element with class 'modalClose'
+//     for (var i = 0; i < close.length; i++) {
+//         close[i].onclick = function () {
+//             closeModal();
+//         };
+//     }
 
-    //     // Click outside of the modal and close it
-    //     window.onclick = function (e) {
-    //         if (e.target == modal) {
-    //             closeModal();
-    //         }
-    //     };
+//     // Click outside of the modal and close it
+//     window.onclick = function (e) {
+//         if (e.target == modal) {
+//             closeModal();
+//         }
+//     };
 
-    //     // Use the escape key to close modal
-    //     document.onkeyup = function (e) {
-    //         e = e || window.event;
-    //         if (modal.classList.contains("modal-show")) {
-    //             if (e.keyCode == 27) {
-    //                 closeModal();
-    //             }
-    //         }
-    //     };
-    // }
-    // modal();
+//     // Use the escape key to close modal
+//     document.onkeyup = function (e) {
+//         e = e || window.event;
+//         if (modal.classList.contains("modal-show")) {
+//             if (e.keyCode == 27) {
+//                 closeModal();
+//             }
+//         }
+//     };
+// }
+// modal();

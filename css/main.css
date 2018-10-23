@@ -25,7 +25,6 @@ a {
     max-width: 1000px;
     margin: 5%;
     position:relative;
-    overflow: hidden;
     transform-origin: -2% bottom;
     transform: rotate(-90deg);
     
@@ -38,10 +37,14 @@ a {
   top: 0;
   height: 100%;
   width: 3000%;
-  animation: dripp 60s linear infinite;
+  
 }
 
-@keyframes dripp {
+.tick {
+    animation: drip 180s linear infinite;
+}
+
+@keyframes drip {
   0%    { left: -200%; }
   100%  { left: -1000%; }
 }
