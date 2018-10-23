@@ -8,6 +8,19 @@ var isSlideFiveOpen = false
 var isSlideSixOpen = false
 var isSlideSevenOpen = false
 
+
+
+$(".banner").mouseenter(function () {
+    $("#banna").css("animation", 'drip 180s linear infinite');
+});
+
+$(".banner").mouseout(function () {
+    $("#banna").css("animation-play-state", 'paused');
+});
+
+
+
+
 function toggleSlide(slide, isSlideOpen) {
     if (isSlideOpen) {
         //close slide
@@ -17,12 +30,87 @@ function toggleSlide(slide, isSlideOpen) {
     } else {
         //open slide
         $(slide).animate({
-                left: '-=60%'
-            }, 1000, 'easeOutQuad');
+            left: '-=60%'
+        }, 1000, 'easeOutQuad');
     }
 }
 
+//function toggleTicker(banner, isMoving) {
+//    if (isMoving) {
+//        function loop() {
+//            //stop moving
+//            $(banner).animate({
+//                left: '=0'
+//            }, 100, 'easeOutQuad');
+//        }
+//        loop();
+//    } else {
+//        function loop() {
+//            //start moving
+//            $(banner).animate({
+//                left: '-=200%'
+//            }, 20000, 'linear', function () {
+//                loop();
+//            });
+//        }
+//        loop();
+//    }
+//}
+
 $(document).ready(function () {
+
+
+    $("#base").click(function () {
+        var hasChildrenOpen = false
+        if (isSlideOneOpen === true) {
+            toggleSlide($("#slide-one"), isSlideOneOpen);
+            isSlideOneOpen = false
+            hasChildrenOpen = true
+//            toggleTicker($("#banna"))
+        }
+        if (isSlideTwoOpen === true) {
+            toggleSlide($("#slide-two"), isSlideTwoOpen);
+            isSlideTwoOpen = false
+            hasChildrenOpen = true
+        }
+        if (isSlideThreeOpen === true) {
+            toggleSlide($("#slide-three"), isSlideThreeOpen);
+            isSlideThreeOpen = false
+            hasChildrenOpen = true
+        }
+        if (isSlideFourOpen === true) {
+            toggleSlide($("#slide-four"), isSlideFourOpen);
+            isSlideFourOpen = false
+            hasChildrenOpen = true
+        }
+        if (isSlideFiveOpen === true) {
+            toggleSlide($("#slide-five"), isSlideFiveOpen);
+            isSlideFiveOpen = false
+            hasChildrenOpen = true
+        }
+        if (isSlideSixOpen === true) {
+            toggleSlide($("#slide-six"), isSlideSixOpen);
+            isSlideSixOpen = false
+            hasChildrenOpen = true
+        }
+        if (isSlideSevenOpen === true) {
+            toggleSlide($("#slide-seven"), isSlideSevenOpen);
+            isSlideSevenOpen = false
+            hasChildrenOpen = true
+        }
+        //if children are open do not close this tab
+        if (hasChildrenOpen === false) {
+            toggleSlide($("#slide-one"), isSlideOneOpen);
+            isSlideOneOpen = !isSlideOneOpen
+            isMoving = false
+        }
+    });
+
+
+
+
+
+
     $("#slide-one").click(function () {
         var hasChildrenOpen = false
         if (isSlideTwoOpen === true) {
