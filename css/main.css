@@ -193,8 +193,9 @@ a {
     display: inline-block;
     font-size: 24px;
     color: blue;
-    transform: translateY(200%) translateX(-8px) rotate(-90deg);
-    position: fixed;
+    transform: rotate(-180deg);
+    writing-mode: vertical-lr;
+    margin-top: 20px;
 }
 
 /*NAVBAR CSS END*/
@@ -552,7 +553,7 @@ p.interview__a--title {
     display: flex;
     justify-content: center;
     align-items: center;
-}*/
+}
 /*typographic*/
 /*body {
     color: #363c41;
@@ -628,7 +629,7 @@ ul#nav {
 
  /*ALEXA RUSS AND DAUGHTERS*/   
 
-.fc__interview--span {
+span.fc__interview--span {
     color: blue;
     font-weight: bold;
 }
@@ -717,7 +718,7 @@ h2#fc__header--h2 {
 /*ALEXA INDEX.HTML TEST CODE*/
 
 #base {
-    background-image: url("../images/landing-2.png");
+    /*background-image: url("../images/landing-2.png");*/
     height: 100%;
     width: 100%;
     background-position: center center;
@@ -732,7 +733,19 @@ h2#fc__header--h2 {
 }
 
 .index__center--text {
-    background: white;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.base-center {
+    margin: 4em;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2em;
+    border: 2px solid blue;
 }
 
 /*ALEXA RECIPE CSS*/
@@ -969,5 +982,9 @@ hr {
     line-height: 2;
     margin: 0;
     padding: 10px;
+}
+
+::selection {
+  background: #6727FB; 
 }
 

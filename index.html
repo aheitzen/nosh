@@ -16,6 +16,7 @@
 	<ul class="ul__navbar">
 		<li id="base">
 			<div class="index__center--text">
+				<div class="base-center">
 				<h1>Welcome to Nosh</h1>
 				<h3>Nosh is a food-centric magazine that aims to welcome all to Jewish cuisine & culture. We take a modern approach to traditional events, recipes and lifestyle that could be enjoyed by anyone.
                 </h3>
@@ -25,6 +26,7 @@
                 <h3>
                     We hope to build community and celebrate one of the many histories we all share together.
                 </h3>
+                </div>
 			</div>
 		</li>
 		<li id="slide-one">
@@ -174,6 +176,9 @@
             match: function() {
                 // Load mobile JS file
                 loadJS('js/mobile.js');
+            },
+            unmatch: function() {
+            	loadJS('js/main.js');
             }
         });
 
@@ -181,9 +186,12 @@
             match: function() {
                 // Load desktop JS file
                 loadJS('js/main.js');
-                //console.log('desktop loaded');
+            },
+            unmatch: function() {
+            	loadJS('js/mobile.js');
             }
         });
+
     </script>
 </body>
 </html>

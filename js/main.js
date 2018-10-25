@@ -575,4 +575,18 @@ $( document ).ready(function() {
      //end of doc
 });
 
+//HOME PAGE IMG RELOADER 
+
+var imageRotator = [
+    "images/img-rotator-10.png",
+    "images/img-rotator-20.png",
+    "images/landing-2.png",
+    "images/img-rotator-30.png",
+    "images/img-rotator-40.png",
+    "images/img-rotator-50.png",
+    "images/img-rotator-60.png",
+];
+
+var n = Math.floor(Math.random()*imageRotator.length);
+document.querySelector('#base').style.backgroundImage = 'url(' + imageRotator[n] + ')';
 
