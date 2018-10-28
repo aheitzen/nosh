@@ -9,6 +9,14 @@ var isSlideSixOpen = false
 var isSlideSevenOpen = false
 
 
+$(".banner").mouseenter(function () {
+    $("#banna").css("animation", 'drip 180s linear infinite');
+});
+
+$(".banner").mouseout(function () {
+    $("#banna").css("animation-play-state", 'paused');
+});
+
 
     function toggleSlide(slide, isSlideOpen) {
         if (isSlideOpen) {
