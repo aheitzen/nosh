@@ -23,6 +23,8 @@ html, body {
     display: none; 
 }
 
+
+
 .container.container__topTen {
 	border: solid 2px var(--secondary-color);
 	width: 90%;
@@ -148,6 +150,71 @@ p {
   opacity: 0;
 }
 
+#water-text {
+  height: 0;
+  opacity: 0;
+}
+
+#flordia {
+  height: 0;
+  margin-bottom: 0;
+  opacity: 0;
+}
+
+#Kauf-text {
+ height: 0;
+  opacity: 0;
+}
+
+
+#skokie {
+ height: 0;
+  margin-bottom: 0;
+  opacity: 0;
+}
+
+#Odelay-text {
+  height: 0;
+  opacity: 0;
+}
+
+#Phoenix {
+  height: 0;
+  margin-bottom: 0;
+  opacity: 0;
+}
+
+#Burlington {
+  height: 0;
+  margin-bottom: 0;
+  opacity: 0;
+}
+
+#Myer-text {
+   height: 0;
+  opacity: 0;
+}
+
+#Portland {
+  height: 0;
+  margin-bottom: 0;
+  opacity: 0;
+}
+
+#Bundy-text {
+  height: 0;
+  opacity: 0;
+}
+
+#Detroit-text {
+   height: 0;
+  opacity: 0;
+}
+#Detroit {
+   height: 0;
+  margin-bottom: 0;
+  opacity: 0;
+}
 .span.span__number {
 	color: white;
     -webkit-text-stroke-width: 1px;
@@ -161,6 +228,48 @@ p {
 }
 
 #span-three {
+  color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: blue;
+}
+
+#span-four {
+  color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: blue;
+}
+
+#span-five {
+  color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: blue;
+}
+
+#span-six {
+  color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: blue;
+}
+
+#span-seven {
+  color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: blue;
+}
+
+#span-eigth {
+  color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: blue;
+}
+
+#span-ninth {
+  color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: blue;
+}
+
+#span-ten {
   color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: blue;
@@ -763,18 +872,268 @@ width: 400px;
     margin: 0 auto;
 }
 
+
+/*FEATURED FARMER SECTION*/
+
+
 .ff__grid--main {
   display: grid;
-  grid-template-areas: "hero hero cta1" "hero hero cta1";
+  /*grid-template-columns: repeat(12, 1fr);*/
+  grid-template-columns: 1fr 12fr 1fr;
+  /*grid-template-rows: 200px 200px 200px;*/
   grid-gap: 20px;
+
+    grid-gap: 10px 50px;
+    
+    margin-bottom: 160px;
+    /*max-width: 1000px;*/
 }
 
-/*.hero {
-  grid-area: hero;
-min-height: 600px;
-background: white url(../images/lisa-jacobs.jpg);
-background-size: cover;
+.h1.h1__ff--title {
+  color: blue;
 
+font-family: times, serif;
 
+font-size: 80px;
+
+font-weight: 100;
+
+margin: 0;
+
+    margin-top: 0px;
+
+margin-top: 80px;
+
+grid-column: 2 / -2;
+
+/*grid-row: 1 / 2;*/
+}
+
+.h2.h2__ff--subtitle {
+  color: blue;
+    font-style: italic;
+    grid-column: 2;
+    text-align: center;
+}
+
+.p.p__ff-bodyText {
+  line-height: 2;
+
+font-family: 'Anonymous Pro', monospace;
+
+/*grid-row: 3 / 4;*/
+
+/*grid-column: 2 / 12;*/
+grid-column: 2 / -2;
+margin-left: 0;
+
+}
+
+.ff__circle--test {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    background-color: #7db9e8;
+    margin: 0 25px 5px 0;
+    float: left;
+    -webkit-shape-outside: circle();
+    shape-outside: circle();
+    /*grid-column: 2 /4;*/
+    background-image: url("../images/lisa-jacobs.png");
+        background-size: cover;
+            background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.test-shape--ff {
+  grid-column: 2 / -2;
+}
+
+.img.img__ff--bottom {
+      filter: none;
+    float: right;
+    margin: 0 25px 5px 0;
+    margin-left: 10px;
+    width: 500px;
+}
+
+.h3.h3__ff--art {
+      font-family: 'futura', sans-serif;
+    font-weight: 500;
+    grid-column: 2 / 6;
+    grid-row: 3 / 3;
+    margin-left: 0;
+    
+    text-align: center;
+}
+
+.blockquote__ff--quotes {
+    color: #6727FB;
+    border: solid 2px #6727FB;
+    text-align: center;
+    font-size: 1.5em;
+    font-style: italic;
+    width: 41%;
+}
+
+.ff__p--quote {
+        line-height: 2;
+        margin: 0;
+        padding: 10px;
+    }
+
+/*.h3.h3__cheese--ingredients {
+  color: blue;
+    font-size: 41px;
+    grid-column: 2 / -2;
+    
 }*/
+
+/*.hr.hr__cheese-hr {
+  background-color: #fff;
+    border-bottom: 1px solid blue;
+    border-top: 1px dashed blue;
+    color: #fff;
+    height: 4px;
+    grid-column: 2 / -2;
+    grid-row: 8;
+    
+}*/
+
+/*FOOTER*/
+
+.footer {
+      border: solid 2px blue;
+}
+
+.h3-footer {
+      text-align: center;
+    color: blue;
+    font-size: 3em;
+}
+
+.fotter-img-recommended {
+  height: 200px;
+}
+
+.more-nosh {
+      background-color: white;
+    /*border: solid 2px blue;*/
+}
+
+.more-nosh-nest {
+      display: grid;
+    grid-template-columns: repeat(3, 1fr);
+      
+
+}
+
+.h4-more-nosh {
+  color: white;
+}
+
+.nosh-grid {
+      align-items: center;
+    /* justify-content: center; */
+    /* justify-items: center; */
+    display: flex;
+    flex-direction: column;
+}
+.bottom-nosh-recipies {
+  width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+        background: blue;
+}
+
+.h4-newsletter-footer {
+      font-size: 2em;
+    margin-bottom: 0;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.h4-newsletter-footer-sub {
+      font-size: 16px;
+    margin-bottom: 0;
+    margin-top: 7px;
+        margin-left: 28px;
+}
+.bottom-nosh-newsletter {
+/*  display: grid;
+    grid-template-columns: repeat(2, 1fr);*/
+}
+
+.input-section {
+         display: flex;
+    justify-content: flex-end;
+    margin-top: -3em;
+    margin-right: 2em;
+}
+
+.bottom-nosh-social-media {
+  display: flex;
+
+flex-direction: row;
+
+align-items: center;
+
+align-content: center;
+
+justify-content: space-between;
+margin-top: 3em;
+margin-bottom: 1em;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.svg-inline--fa.fa-facebook-f.fa-w-9, .svg-inline--fa.fa-instagram.fa-w-14, .svg-inline--fa.fa-twitter.fa-w-16, .svg-inline--fa.fa-youtube.fa-w-18 {
+    font-size: 1.2em;
+    color: blue;
+    margin-right: 1em;
+}
+
+.footer-logo-bottom {
+  width: 50px;
+}
+
+.search-span-footer {
+  display: block;
+}
+
+ .socail-media-input {
+  height: 3em;
+    border: solid 2px blue;
+    width: 20em;
+        margin-right: 1em;
+  } 
+
+.search-span-footer {
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 14px;
+    margin-bottom: 5px;
+}  
+
+.newletter-input {
+   height: 3em;
+    border: solid 2px blue;
+    width: 20em;
+}
+
+button {
+  background: blue;
+    border: blue;
+    color: white;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+
+
+
+
+
+
+
 

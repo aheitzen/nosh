@@ -514,7 +514,7 @@ $( document ).ready(function() {
 //////// FIFTH BAGEL SHOP
     // hover over text, subheader floats up
     $("#water-section").mouseenter(function() {
-        $( "#georgia" ).css({ 
+        $( "#flordia" ).css({ 
             "height": "auto",
             "opacity": 1,
             "transition": "ease-in 1s"
@@ -522,11 +522,11 @@ $( document ).ready(function() {
     });
     // Text block function
     $("#water-section").mouseenter(function() {
-        $( "#bb-text" ).css( "display", "block" );
+        $( "#water-text" ).css( "display", "block" );
     });
     //copy-block-transition
     $("#water-section").mouseenter(function() {
-        $( "#bb-text" ).css({ 
+        $( "#water-text" ).css({ 
             "height": "auto",
             "opacity": 1,
             "transition": "ease-in 1s"
@@ -535,7 +535,7 @@ $( document ).ready(function() {
     // changing image on hover
     $("#water-section").mouseenter(function() {
         $(".img.img__top-ten").attr({ 
-            "src": "images/bagel-4.png",
+            "src": "images/bagel-14.png",
             "style":  "opacity: 1"
         });
     }).mouseleave(function() {
@@ -544,7 +544,7 @@ $( document ).ready(function() {
         });
     });
     $("#water-section").mouseenter(function() {
-        $("#bagelB-header").css({
+        $("#water-header").css({
             "color": "white", 
             "-webkit-text-stroke-width": "1px",
             "-webkit-text-stroke-color": "blue",
@@ -552,7 +552,7 @@ $( document ).ready(function() {
         });
         $("#span-five").css("color", "blue");
     }).mouseleave(function() {
-        $( "#bagelB-header" ).css( "color", "blue" );
+        $( "#water-header" ).css( "color", "blue" );
         $("#span-five").css({
             "color": "white", 
             "-webkit-text-stroke-width": "1px",
@@ -561,66 +561,356 @@ $( document ).ready(function() {
     });
     // getting rid of copy transion home function
 
-    $("#bb-section").mouseenter(function() {
+    $("#water-section").mouseenter(function() {
         $( "#top-ten-text" ).css( "display", "none" );
     }).mouseleave(function() {
         $( "#top-ten-text" ).css( "display", "block" );
     });
 
-    $("#bb-section").mouseenter(function() {
+    $("#water-section").mouseenter(function() {
         $( "#top-ten-text" ).css( "display", "none" );
     }).mouseleave(function() {
         $( "#top-ten-text" ).css( "display", "block" );
     });
+
+
+    //////// SIXTH BAGEL SHOP
+    // hover over text, subheader floats up
+    $("#Kauf-section").mouseenter(function() {
+        $( "#skokie" ).css({ 
+            "height": "auto",
+            "opacity": 1,
+            "transition": "ease-in 1s"
+        });
+    });
+    // Text block function
+    $("#Kauf-section").mouseenter(function() {
+        $( "#Kauf-text" ).css( "display", "block" );
+    });
+    //copy-block-transition
+    $("#Kauf-section").mouseenter(function() {
+        $( "#Kauf-text" ).css({ 
+            "height": "auto",
+            "opacity": 1,
+            "transition": "ease-in 1s"
+        });
+    });
+    // changing image on hover
+    $("#Kauf-section").mouseenter(function() {
+        $(".img.img__top-ten").attr({ 
+            "src": "images/bagel-16.png",
+            "style":  "opacity: 1"
+        });
+    }).mouseleave(function() {
+        $( ".img.img__top-ten" ).css({ 
+            "display": "none"
+        });
+    });
+    $("#Kauf-section").mouseenter(function() {
+        $("#Kauf-header").css({
+            "color": "white", 
+            "-webkit-text-stroke-width": "1px",
+            "-webkit-text-stroke-color": "blue",
+            "cursor": "not-allowed"
+        });
+        $("#span-six").css("color", "blue");
+    }).mouseleave(function() {
+        $( "#Kauf-header" ).css( "color", "blue" );
+        $("#span-six").css({
+            "color": "white", 
+            "-webkit-text-stroke-width": "1px",
+            "-webkit-text-stroke-color": "blue"
+        });
+    });
+    // getting rid of copy transion home function
+
+    $("#Kauf-section").mouseenter(function() {
+            $( "#top-ten-text" ).css( "display", "none" );
+        }).mouseleave(function() {
+            $( "#top-ten-text" ).css( "display", "block" );
+        });
+
+        $("#Kauf-section").mouseenter(function() {
+            $( "#top-ten-text" ).css( "display", "none" );
+        }).mouseleave(function() {
+            $( "#top-ten-text" ).css( "display", "block" );
+        });
+
+
+
+         //////// SEVENTH BAGEL SHOP
+    // hover over text, subheader floats up
+    $("#Odelay-section").mouseenter(function() {
+        $( "#Phoenix" ).css({ 
+            "height": "auto",
+            "opacity": 1,
+            "transition": "ease-in 1s"
+        });
+    });
+    // Text block function
+    $("#Odelay-section").mouseenter(function() {
+        $( "#Odelay-text" ).css( "display", "block" );
+    });
+    //copy-block-transition
+    $("#Odelay-section").mouseenter(function() {
+        $( "#Odelay-text" ).css({ 
+            "height": "auto",
+            "opacity": 1,
+            "transition": "ease-in 1s"
+        });
+    });
+    // changing image on hover
+    $("#Odelay-section").mouseenter(function() {
+        $(".img.img__top-ten").attr({ 
+            "src": "images/bagel-17.png",
+            "style":  "opacity: 1"
+        });
+    }).mouseleave(function() {
+        $( ".img.img__top-ten" ).css({ 
+            "display": "none"
+        });
+    });
+    $("#Odelay-section").mouseenter(function() {
+        $("#Odelay-header").css({
+            "color": "white", 
+            "-webkit-text-stroke-width": "1px",
+            "-webkit-text-stroke-color": "blue",
+            "cursor": "not-allowed"
+        });
+        $("#span-seven").css("color", "blue");
+    }).mouseleave(function() {
+        $( "#Odelay-header" ).css( "color", "blue" );
+        $("#span-seven").css({
+            "color": "white", 
+            "-webkit-text-stroke-width": "1px",
+            "-webkit-text-stroke-color": "blue"
+        });
+    });
+    // getting rid of copy transion home function
+
+    $("#Odelay-section").mouseenter(function() {
+            $( "#top-ten-text" ).css( "display", "none" );
+        }).mouseleave(function() {
+            $( "#top-ten-text" ).css( "display", "block" );
+        });
+
+        $("#Odelay-section").mouseenter(function() {
+            $( "#top-ten-text" ).css( "display", "none" );
+        }).mouseleave(function() {
+            $( "#top-ten-text" ).css( "display", "block" );
+        });
+
+
+
+
+    //////// EIGTH BAGEL SHOP
+    // hover over text, subheader floats up
+    $("#Myer-section").mouseenter(function() {
+        $( "#Burlington" ).css({ 
+            "height": "auto",
+            "opacity": 1,
+            "transition": "ease-in 1s"
+        });
+    });
+    // Text block function
+    $("#Myer-section").mouseenter(function() {
+        $( "#Myer-text" ).css( "display", "block" );
+    });
+    //copy-block-transition
+    $("#Myer-section").mouseenter(function() {
+        $( "#Myer-text" ).css({ 
+            "height": "auto",
+            "opacity": 1,
+            "transition": "ease-in 1s"
+        });
+    });
+    // changing image on hover
+    $("#Myer-section").mouseenter(function() {
+        $(".img.img__top-ten").attr({ 
+            "src": "images/bagel-20.png",
+            "style":  "opacity: 1"
+        });
+    }).mouseleave(function() {
+        $( ".img.img__top-ten" ).css({ 
+            "display": "none"
+        });
+    });
+    $("#Myer-section").mouseenter(function() {
+        $("#Myer-header").css({
+            "color": "white", 
+            "-webkit-text-stroke-width": "1px",
+            "-webkit-text-stroke-color": "blue",
+            "cursor": "not-allowed"
+        });
+        $("#span-eigth").css("color", "blue");
+    }).mouseleave(function() {
+        $( "#Myer-header" ).css( "color", "blue" );
+        $("#span-eigth").css({
+            "color": "white", 
+            "-webkit-text-stroke-width": "1px",
+            "-webkit-text-stroke-color": "blue"
+        });
+    });
+    // getting rid of copy transion home function
+
+    $("#Myer-section").mouseenter(function() {
+            $( "#top-ten-text" ).css( "display", "none" );
+        }).mouseleave(function() {
+            $( "#top-ten-text" ).css( "display", "block" );
+        });
+
+        $("#Myer-section").mouseenter(function() {
+            $( "#top-ten-text" ).css( "display", "none" );
+        }).mouseleave(function() {
+            $( "#top-ten-text" ).css( "display", "block" );
+        });
+
+
+
+
+
+
+    //////// NINTH BAGEL SHOP
+    // hover over text, subheader floats up
+    $("#Bundy-section").mouseenter(function() {
+        $( "#Portland" ).css({ 
+            "height": "auto",
+            "opacity": 1,
+            "transition": "ease-in 1s"
+        });
+    });
+    // Text block function
+    $("#Bundy-section").mouseenter(function() {
+        $( "#Bundy-text" ).css( "display", "block" );
+    });
+    //copy-block-transition
+    $("#Bundy-section").mouseenter(function() {
+        $( "#Bundy-text" ).css({ 
+            "height": "auto",
+            "opacity": 1,
+            "transition": "ease-in 1s"
+        });
+    });
+    // changing image on hover
+    $("#Bundy-section").mouseenter(function() {
+        $(".img.img__top-ten").attr({ 
+            "src": "images/bagel-18.png",
+            "style":  "opacity: 1"
+        });
+    }).mouseleave(function() {
+        $( ".img.img__top-ten" ).css({ 
+            "display": "none"
+        });
+    });
+    $("#Bundy-section").mouseenter(function() {
+        $("#Bundy-header").css({
+            "color": "white", 
+            "-webkit-text-stroke-width": "1px",
+            "-webkit-text-stroke-color": "blue",
+            "cursor": "not-allowed"
+        });
+        $("#span-ninth").css("color", "blue");
+    }).mouseleave(function() {
+        $( "#Bundy-header" ).css( "color", "blue" );
+        $("#span-ninth").css({
+            "color": "white", 
+            "-webkit-text-stroke-width": "1px",
+            "-webkit-text-stroke-color": "blue"
+        });
+    });
+    // getting rid of copy transion home function
+
+    $("#Bundy-section").mouseenter(function() {
+            $( "#top-ten-text" ).css( "display", "none" );
+        }).mouseleave(function() {
+            $( "#top-ten-text" ).css( "display", "block" );
+        });
+
+        $("#Bundy-section").mouseenter(function() {
+            $( "#top-ten-text" ).css( "display", "none" );
+        }).mouseleave(function() {
+            $( "#top-ten-text" ).css( "display", "block" );
+        });
+
+
+
+
+    //////// TENTH BAGEL SHOP
+    // hover over text, subheader floats up
+    $("#Detroit-section").mouseenter(function() {
+        $( "#Detroit" ).css({ 
+            "height": "auto",
+            "opacity": 1,
+            "transition": "ease-in 1s"
+        });
+    });
+    // Text block function
+    $("#Detroit-section").mouseenter(function() {
+        $( "#Detroit-text" ).css( "display", "block" );
+    });
+    //copy-block-transition
+    $("#Detroit-section").mouseenter(function() {
+        $( "#Detroit-text" ).css({ 
+            "height": "auto",
+            "opacity": 1,
+            "transition": "ease-in 1s"
+        });
+    });
+    // changing image on hover
+    $("#Detroit-section").mouseenter(function() {
+        $(".img.img__top-ten").attr({ 
+            "src": "images/bagel-3.png",
+            "style":  "opacity: 1"
+        });
+    }).mouseleave(function() {
+        $( ".img.img__top-ten" ).css({ 
+            "display": "none"
+        });
+    });
+    $("#Detroit-section").mouseenter(function() {
+        $("#Detroit-header").css({
+            "color": "white", 
+            "-webkit-text-stroke-width": "1px",
+            "-webkit-text-stroke-color": "blue",
+            "cursor": "not-allowed"
+        });
+        $("#span-ten").css("color", "blue");
+    }).mouseleave(function() {
+        $( "#Detroit-header" ).css( "color", "blue" );
+        $("#span-ten").css({
+            "color": "white", 
+            "-webkit-text-stroke-width": "1px",
+            "-webkit-text-stroke-color": "blue"
+        });
+    });
+    // getting rid of copy transion home function
+
+    $("#Detroit-section").mouseenter(function() {
+            $( "#top-ten-text" ).css( "display", "none" );
+        }).mouseleave(function() {
+            $( "#top-ten-text" ).css( "display", "block" );
+        });
+
+        $("#Detroit-section").mouseenter(function() {
+            $( "#top-ten-text" ).css( "display", "none" );
+        }).mouseleave(function() {
+            $( "#top-ten-text" ).css( "display", "block" );
+        });
      //end of doc
 });
 
-    // function modal() {
-    //     var modal = $(".modal")[0],
-    //         trigger = $(".modal-trigger")[0],
-    //         close = $(".modalClose");
+//HOME PAGE IMG RELOADER 
 
-    //     closeModal = function () {
-    //         modal.classList.remove("modal-show");
-    //         modal.classList.add("modal-hide");
-    //         // Remove hide class after animation is done
-    //         afterAnimation = function () {
-    //             modal.classList.remove("modal-hide");
-    //         };
-    //         // This listens for the CSS animations to finish and then hides the modal
-    //         modal.addEventListener("webkitAnimationEnd", afterAnimation, false);
-    //         modal.addEventListener("oAnimationEnd", afterAnimation, false);
-    //         modal.addEventListener("msAnimationEnd", afterAnimation, false);
-    //         modal.addEventListener("animationend", afterAnimation, false);
-    //     };
+var imageRotator = [
+    "images/img-rotator-10.png",
+    "images/img-rotator-20.png",
+    "images/landing-2.png",
+    "images/img-rotator-30.png",
+    "images/img-rotator-40.png",
+    "images/img-rotator-50.png",
+    "images/img-rotator-60.png",
+];
 
-    //     // Open the modal
-    //     trigger.onclick = function () {
-    //         modal.classList.add("modal-show");
-    //     };
+var n = Math.floor(Math.random()*imageRotator.length);
+document.querySelector('#base').style.backgroundImage = 'url(' + imageRotator[n] + ')';
 
-    //     // Close the modal with any element with class 'modalClose'
-    //     for (var i = 0; i < close.length; i++) {
-    //         close[i].onclick = function () {
-    //             closeModal();
-    //         };
-    //     }
-
-    //     // Click outside of the modal and close it
-    //     window.onclick = function (e) {
-    //         if (e.target == modal) {
-    //             closeModal();
-    //         }
-    //     };
-
-    //     // Use the escape key to close modal
-    //     document.onkeyup = function (e) {
-    //         e = e || window.event;
-    //         if (modal.classList.contains("modal-show")) {
-    //             if (e.keyCode == 27) {
-    //                 closeModal();
-    //             }
-    //         }
-    //     };
-    // }
-    // modal();
