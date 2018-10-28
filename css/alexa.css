@@ -150,6 +150,71 @@ p {
   opacity: 0;
 }
 
+#water-text {
+  height: 0;
+  opacity: 0;
+}
+
+#flordia {
+  height: 0;
+  margin-bottom: 0;
+  opacity: 0;
+}
+
+#Kauf-text {
+ height: 0;
+  opacity: 0;
+}
+
+
+#skokie {
+ height: 0;
+  margin-bottom: 0;
+  opacity: 0;
+}
+
+#Odelay-text {
+  height: 0;
+  opacity: 0;
+}
+
+#Phoenix {
+  height: 0;
+  margin-bottom: 0;
+  opacity: 0;
+}
+
+#Burlington {
+  height: 0;
+  margin-bottom: 0;
+  opacity: 0;
+}
+
+#Myer-text {
+   height: 0;
+  opacity: 0;
+}
+
+#Portland {
+  height: 0;
+  margin-bottom: 0;
+  opacity: 0;
+}
+
+#Bundy-text {
+  height: 0;
+  opacity: 0;
+}
+
+#Detroit-text {
+   height: 0;
+  opacity: 0;
+}
+#Detroit {
+   height: 0;
+  margin-bottom: 0;
+  opacity: 0;
+}
 .span.span__number {
 	color: white;
     -webkit-text-stroke-width: 1px;
@@ -163,6 +228,48 @@ p {
 }
 
 #span-three {
+  color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: blue;
+}
+
+#span-four {
+  color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: blue;
+}
+
+#span-five {
+  color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: blue;
+}
+
+#span-six {
+  color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: blue;
+}
+
+#span-seven {
+  color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: blue;
+}
+
+#span-eigth {
+  color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: blue;
+}
+
+#span-ninth {
+  color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: blue;
+}
+
+#span-ten {
   color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: blue;
@@ -892,6 +999,141 @@ margin-left: 0;
     grid-row: 8;
     
 }*/
+
+/*FOOTER*/
+
+.footer {
+      border: solid 2px blue;
+}
+
+.h3-footer {
+      text-align: center;
+    color: blue;
+    font-size: 3em;
+}
+
+.fotter-img-recommended {
+  height: 200px;
+}
+
+.more-nosh {
+      background-color: white;
+    /*border: solid 2px blue;*/
+}
+
+.more-nosh-nest {
+      display: grid;
+    grid-template-columns: repeat(3, 1fr);
+      
+
+}
+
+.h4-more-nosh {
+  color: white;
+}
+
+.nosh-grid {
+      align-items: center;
+    /* justify-content: center; */
+    /* justify-items: center; */
+    display: flex;
+    flex-direction: column;
+}
+.bottom-nosh-recipies {
+  width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+        background: blue;
+}
+
+.h4-newsletter-footer {
+      font-size: 2em;
+    margin-bottom: 0;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.h4-newsletter-footer-sub {
+      font-size: 16px;
+    margin-bottom: 0;
+    margin-top: 7px;
+        margin-left: 28px;
+}
+.bottom-nosh-newsletter {
+/*  display: grid;
+    grid-template-columns: repeat(2, 1fr);*/
+}
+
+.input-section {
+         display: flex;
+    justify-content: flex-end;
+    margin-top: -3em;
+    margin-right: 2em;
+}
+
+.bottom-nosh-social-media {
+  display: flex;
+
+flex-direction: row;
+
+align-items: center;
+
+align-content: center;
+
+justify-content: space-between;
+margin-top: 3em;
+margin-bottom: 1em;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.svg-inline--fa.fa-facebook-f.fa-w-9, .svg-inline--fa.fa-instagram.fa-w-14, .svg-inline--fa.fa-twitter.fa-w-16, .svg-inline--fa.fa-youtube.fa-w-18 {
+    font-size: 1.2em;
+    color: blue;
+    margin-right: 1em;
+}
+
+.footer-logo-bottom {
+  width: 50px;
+}
+
+.search-span-footer {
+  display: block;
+}
+
+ .socail-media-input {
+  height: 3em;
+    border: solid 2px blue;
+    width: 20em;
+        margin-right: 1em;
+  } 
+
+.search-span-footer {
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 14px;
+    margin-bottom: 5px;
+}  
+
+.newletter-input {
+   height: 3em;
+    border: solid 2px blue;
+    width: 20em;
+}
+
+button {
+  background: blue;
+    border: blue;
+    color: white;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+
+
+
+
+
 
 
 
