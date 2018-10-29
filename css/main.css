@@ -44,7 +44,8 @@ a {
     position: relative;
     transform-origin: -2% bottom;
     transform: rotate(-90deg);
-    bottom: -50%;
+    bottom: -82%;
+    overflow: hidden;
 }
 
 .banner .banner__logo {
