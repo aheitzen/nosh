@@ -497,7 +497,8 @@ img.content__seven--hero {
 }
 
 .content__seven .pantry__interview {
-    grid-column: 2 / 10;
+    margin-top: 40px;
+    grid-column: 2 / 11;
     grid-row: 3 / 9;
 }
 
@@ -693,6 +694,13 @@ p.interview__a {
         left: 0;
         
     }
+    
+    .content__seven {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    grid-gap: 20px;
+}
 
     #slide-one:hover {
         margin-bottom: -10px;
