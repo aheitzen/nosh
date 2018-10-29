@@ -1296,6 +1296,12 @@ hr {
     margin-left: 4em;
 }
 
+#footer-pantry {
+    margin-top: 25%;
+    width: 57%;
+    margin-left: 4em;
+}
+
 ::selection {
     background: #6727FB;
 }
