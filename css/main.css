@@ -775,14 +775,23 @@ p.interview__a {
     }
 
     .h1__nav {
-        display: inline-block;
+        display: contents;
         font-size: 26px;
         color: blue;
         transform: translateY(-5%) translateX(0px) rotate(0deg);
         position: fixed;
     }
+    
+    .content__five {
+        margin-top: 3%;
+    }
+    
+    .content__six {
+        margin-top: 3%;
+    }
 
     .content__seven {
+        margin-top: 3%;
         max-width: 90%;
         grid-gap: 5px;
         height: auto;
